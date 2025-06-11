@@ -137,7 +137,7 @@
             <button class="modal-close" onclick="closeModal()">&times;</button>
             <div class="modal-content2">
                 <div class="modal-image" id="modalImage">
-                    <img class="modal-image" src="./images/cart01.jpg" alt="Modal Image">
+                    <img class="modal-image" src="./images/category/cat01.jpg" alt="Modal Image">
                 </div>
                 <h3 id="modalTitle">309 X 309 CAN WITH OR WITHOUT TAGGER</h3>
                 <p id="modalDescription">
