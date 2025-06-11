@@ -623,8 +623,90 @@
             align-items: center;
         }
 
+
+        .navdeit ul {
+            list-style-type: none;
+            /* Remove li dots */
+            padding: 0;
+            margin: 0;
+            display: flex;
+            gap: 20px;
+            /* Adjust spacing as needed */
+        }
+
+        .navdeit ul li {
+            position: relative;
+        }
+
+        .navdeit ul li a {
+            position: relative;
+            text-decoration: none;
+            color: black;
+            padding: 1px 2px;
+            display: inline-block;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+
+        .navdeit ul li a::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            height: 2px;
+            width: 0;
+            background-color: black;
+            transition: width 0.3s ease;
+        }
+
+        .navdeit ul li a:hover::after,
+        /* .navdeit ul li a:focus::after, */
+        .navdeit ul li.active a::after {
+            width: 100%;
+        }
+
+
+        .navdeit ul li.active a {
+            /* font-weight: bold; */
+        }
+
+        .topsubmenu {
+            padding-top: 10px !important;
+            padding-bottom: 10px !important;
+            display: none !important;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            list-style: none;
+            /* padding: 10px 0; */
+            margin: 0;
+            z-index: 100;
+            min-width: 200px;
+        }
+
+        .topsubmenu li a {
+            display: block;
+            white-space: nowrap;
+            color: black;
+            font-weight: 400 !important;
+            margin-left: 20px !important;
+            margin-top: 3px !important;
+            margin-bottom: 3px !important;
+        }
+
+        /* Show submenu when .open is added via JS */
+        .dropdown.open .topsubmenu {
+            display: block !important;
+        }
+
         /* Responsive Design */
         @media (max-width: 768px) {
+            .navdeit{
+                display: none;
+            }
+            
             .hero-content h1 {
                 font-size: 2.5rem;
             }
@@ -688,7 +770,8 @@
                 width: 100%;
                 right: -100%;
             }
-            .footerCop p{
+
+            .footerCop p {
                 font-size: 10px;
             }
         }
