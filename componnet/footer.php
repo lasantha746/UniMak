@@ -56,10 +56,12 @@
                 </div>
             </div>
         </div>
-        <div class="mt-4 text-md-start text-center">
+        <div class="mt-4 footerCop">
             <p class="ps-md-2">
-                &copy; Copyright by <span class="border-bottom">Unimak</span>.
-                Developed By <a class="border-bottom" href="https://plover.lk/">Plover.lk</a>
+                &copy; Copyright by <b>Unimak</b>.
+            </p>
+            <p class="ps-md-2">
+                Web Developed By <a style="text-decoration: none; color: #333;" href="https://plover.lk/"><b>plover.lk</b></a>
             </p>
         </div>
     </div>
