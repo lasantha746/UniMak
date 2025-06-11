@@ -703,10 +703,10 @@
 
         /* Responsive Design */
         @media (max-width: 768px) {
-            .navdeit{
+            .navdeit {
                 display: none;
             }
-            
+
             .hero-content h1 {
                 font-size: 2.5rem;
             }

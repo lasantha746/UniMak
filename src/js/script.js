@@ -84,7 +84,6 @@ document.querySelectorAll(".product-card").forEach((card, index) => {
   card.style.animationDelay = `${index * 0.1}s`;
 });
 
-
 // Navbar scroll effect
 window.addEventListener("scroll", function () {
   const navbar = document.querySelector(".navbar");
@@ -109,4 +108,9 @@ document.addEventListener("DOMContentLoaded", function () {
       console.log("Menu toggled");
     });
   }
+});
+
+//wow animation
+document.addEventListener("DOMContentLoaded", function () {
+  new WOW().init();
 });
