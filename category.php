@@ -39,7 +39,7 @@
 
         <div class="product-grid">
             <div class="product-card" data-product="1">
-                <img class="product-image" src="./images/cart01.jpg" alt="card">
+                <img class="product-image" src="./images/category/cat01.jpg" alt="card">
                 <div class="product-info">
                     <h3 class="product-title">309 X 309 CAN WITH OR WITHOUT TAGGER</h3>
                     <div class="button-group">
@@ -53,8 +53,8 @@
                     </div>
                 </div>
             </div>
-            <div class="product-card" data-product="1">
-                <img class="product-image" src="./images/cart01.jpg" alt="card">
+            <div class="product-card" data-product="2">
+                <img class="product-image" src="./images/category/cat02.jpg" alt="card">
                 <div class="product-info">
                     <h3 class="product-title">309 X 309 CAN WITH OR WITHOUT TAGGER</h3>
                     <div class="button-group">
@@ -68,8 +68,8 @@
                     </div>
                 </div>
             </div>
-            <div class="product-card" data-product="1">
-                <img class="product-image" src="./images/cart01.jpg" alt="card">
+            <div class="product-card" data-product="3">
+                <img class="product-image" src="./images/category/cat03.jpg" alt="card">
                 <div class="product-info">
                     <h3 class="product-title">309 X 309 CAN WITH OR WITHOUT TAGGER</h3>
                     <div class="button-group">
@@ -83,8 +83,8 @@
                     </div>
                 </div>
             </div>
-            <div class="product-card" data-product="1">
-                <img class="product-image" src="./images/cart01.jpg" alt="card">
+            <div class="product-card" data-product="4">
+                <img class="product-image" src="./images/category/cat04.jpg" alt="card">
                 <div class="product-info">
                     <h3 class="product-title">309 X 309 CAN WITH OR WITHOUT TAGGER</h3>
                     <div class="button-group">
@@ -98,8 +98,8 @@
                     </div>
                 </div>
             </div>
-            <div class="product-card" data-product="1">
-                <img class="product-image" src="./images/cart01.jpg" alt="card">
+            <div class="product-card" data-product="5">
+                <img class="product-image" src="./images/category/cat05.jpg" alt="card">
                 <div class="product-info">
                     <h3 class="product-title">309 X 309 CAN WITH OR WITHOUT TAGGER</h3>
                     <div class="button-group">
@@ -113,8 +113,8 @@
                     </div>
                 </div>
             </div>
-            <div class="product-card" data-product="1">
-                <img class="product-image" src="./images/cart01.jpg" alt="card">
+            <div class="product-card" data-product="6">
+                <img class="product-image" src="./images/category/cat06.jpg" alt="card">
                 <div class="product-info">
                     <h3 class="product-title">309 X 309 CAN WITH OR WITHOUT TAGGER</h3>
                     <div class="button-group">
