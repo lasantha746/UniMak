@@ -20,7 +20,7 @@
 
     <!-- Page Loader -->
     <?php
-    //  include('componnet/loading2.php'); 
+     include('componnet/loading2.php'); 
     ?>
 
     <!-- Navigation -->
