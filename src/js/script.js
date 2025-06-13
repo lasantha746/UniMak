@@ -39,11 +39,14 @@ function closeModal() {
 }
 
 // Close modal on overlay click
-document.getElementById("modalOverlay").addEventListener("click", function (e) {
-  if (e.target === this) {
+function handleModalClick(e) {
+  if (e.target === e.currentTarget) {
     closeModal();
   }
-});
+}
+const modal = document.getElementById("modalOverlay");
+if (modal) modal.addEventListener("click", handleModalClick);
+
 
 // Smooth scrolling for navigation links
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
@@ -110,7 +113,6 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
-//wow animation
-document.addEventListener("DOMContentLoaded", function () {
-  new WOW().init();
-});
+//AOS animation
+
+
