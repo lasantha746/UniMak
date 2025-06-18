@@ -11,7 +11,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    animation: loaderFadeOut 0.5s ease 2.5s forwards;
+    animation: loaderFadeOut 0.5s ease 6s forwards;
   }
 
   /* Centered GIF */
@@ -22,7 +22,7 @@
     background: url('./images/new.gif') no-repeat center/contain;
     display: block;
     opacity: 0;
-    animation: gifFadeIn 0.5s ease forwards, gifFadeOut 0.5s ease 2s forwards;
+    animation: gifFadeIn 0.5s ease forwards, gifFadeOut 0.5s ease 5.5s forwards;
   }
 
   /* Loading bar container */
@@ -45,7 +45,7 @@
     height: 100%;
     width: 0%;
     background: #4fc3f7;
-    animation: fillSmooth 2.5s linear forwards;
+    animation: fillSmooth 6s linear forwards;
   }
 
   /* Fade animations */

@@ -54,6 +54,12 @@
     </div>
 
 
+
+    <!-- Scroll to Top Button -->
+    <button onclick="scrollToTop()" id="scrollBtn" title="Go to top"> <i class="fas fa-arrow-up"></i></button>
+
+
+
     <script>
         document.addEventListener("DOMContentLoaded", function() {
             const dropdown = document.querySelector(".dropdown");
@@ -70,4 +76,25 @@
                 }
             });
         });
+    </script>
+
+
+    <script>
+        // Show button when scroll down
+        window.onscroll = function() {
+            const scrollBtn = document.getElementById("scrollBtn");
+            if (document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000) {
+                scrollBtn.style.display = "block";
+            } else {
+                scrollBtn.style.display = "none";
+            }
+        };
+
+        // Smooth scroll to top
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
     </script>
