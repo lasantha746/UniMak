@@ -20,7 +20,7 @@
 
     <!-- Page Loader -->
     <?php
-     include('componnet/loading2.php'); 
+    include('componnet/loading2.php');
     ?>
 
     <!-- Navigation -->
@@ -149,6 +149,33 @@
                         </div>
                     </div>
 
+                </div>
+            </section>
+
+            <section class="">
+                <div class="container ps-3 ps-md-5">
+                    <div class="row">
+                        <div class="col-12 col-md-6 mb-4 mb-lg-0 mt-0 mt-md-0 mt-lg-5 pt-0 pt-lg-5">
+                            <div class="section-title">
+                                <h2 class="mb-3" data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000">
+                                    Think Sustainable. <br>
+                                    Choose Unimak.
+                                </h2>
+                                <div class="animated-line mb-3" data-aos="fade-right" data-aos-delay="300" data-aos-duration="1000">
+                                    <div class="line-fill"></div>
+                                </div>
+                                <p class="parcontact" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
+                                    At Unimak, sustainability is not a choice - it's our promise. <br>
+                                    Proudly made in Sri Lanka, our metal packaging solutions combine <br>
+                                    environmental responsibility with trusted quality to meet <br>
+                                    your needs today and beyond
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 text-center d-flex justify-content-center align-items-center">
+                            <img src="./images/homeGIF.gif" alt="Bottle Cap" class=" rotate-img2" data-aos="fade-left" data-aos-delay="500" data-aos-duration="1000" />
+                        </div>
+                    </div>
                 </div>
             </section>
 
