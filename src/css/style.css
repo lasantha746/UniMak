@@ -307,6 +307,7 @@
             max-width: 1200px;
             margin: 0 auto;
         }
+
         .product-grid2 {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -326,6 +327,7 @@
             cursor: pointer;
             position: relative;
             border: 2px solid #d8d8d8;
+            height: 100%;
         }
 
 
@@ -434,6 +436,7 @@
         .product-info {
             padding: 15px;
             padding-top: 15px;
+            height: 100%;
         }
 
         .product-title {
@@ -1153,31 +1156,118 @@
             background-color: #555;
         }
 
-         .vision-card {
-      background: linear-gradient(to right, #0000ff, #000033); /* blue gradient */
-      color: white;
-      padding: 30px;
-      border-radius: 10px;
-      width: fit-content;
-      height: fit-content;
-      font-family: Arial, sans-serif;
-    }
+        .vision-card {
+            background: linear-gradient(to right, #0000ff, #000033);
+            /* blue gradient */
+            color: white;
+            padding: 30px;
+            border-radius: 10px;
+            width: fit-content;
+            height: fit-content;
+            font-family: Arial, sans-serif;
+        }
 
-    .vision-card h5 {
-      font-weight: bold;
-      font-size: 28px;
-    }
+        .vision-card h5 {
+            font-weight: bold;
+            font-size: 28px;
+        }
 
-    .vision-card p {
-      margin-bottom: 0;
-      font-size: 20px;
-    }
+        .vision-card p {
+            margin-bottom: 0;
+            font-size: 20px;
+        }
 
-    .vision-highlight {
-      font-weight: bold;
-    }
+        .vision-highlight {
+            font-weight: bold;
+        }
 
-    .vision-subtext {
-      font-size: 16px !important;
-      margin-top: 10px;
-    }
+        .vision-subtext {
+            font-size: 16px !important;
+            margin-top: 10px;
+        }
+
+
+
+
+
+        /* Slider */
+
+        .container_ani {
+            width: 100%;
+            height: 100vh;
+            position: relative;
+            background: url('background.jpg') center/cover no-repeat;
+        }
+
+        .layer {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            transition: all 1s ease-out;
+            height: 100vh;
+        }
+
+        .ice {
+            min-width: 100%;
+            top: 0;
+        }
+
+        .tonic {
+            opacity: 0;
+            transform: translate(-50%, 100%);
+        }
+        .bottle {
+            opacity: 0;
+            transform: translate(-50%, 100%);
+        }
+
+        .bottle.active,
+        .tonic.active {
+            opacity: 1;
+            transform: translate(-50%, 0) rotate(0deg);
+        }
+
+        .tonic.animate {
+            animation: dropTonic 1s ease forwards;
+        }
+
+        @keyframes dropTonic {
+            0% {
+                transform: translate(-50%, -100%) rotate(0deg);
+            }
+
+            60% {
+                transform: translate(-50%, 0%) rotate(0deg);
+            }
+
+            100% {
+                transform: translate(-50%, 0%) rotate(0deg);
+            }
+        }
+
+        #startScreen {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            background: #000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 200;
+        }
+
+        #startScreen button {
+            font-size: 2rem;
+            padding: 20px 40px;
+            cursor: pointer;
+            background-color: #fff;
+            border: none;
+            border-radius: 10px;
+            transition: background-color 0.3s;
+        }
+
+        #startScreen button:hover {
+            background-color: #ccc;
+        }

@@ -26,26 +26,26 @@ sideNavClose.addEventListener("click", closeSideNav);
 sideNavOverlay.addEventListener("click", closeSideNav);
 
 // Modal Functions
-function openModal(productId) {
-  const modal = document.getElementById("modalOverlay");
-  modal.classList.add("active");
-  document.body.style.overflow = "hidden";
-}
+// function openModal(productId) {
+//   const modal = document.getElementById("modalOverlay");
+//   modal.classList.add("active");
+//   document.body.style.overflow = "hidden";
+// }
 
-function closeModal() {
-  const modal = document.getElementById("modalOverlay");
-  modal.classList.remove("active");
-  document.body.style.overflow = "auto";
-}
+// function closeModal() {
+//   const modal = document.getElementById("modalOverlay");
+//   modal.classList.remove("active");
+//   document.body.style.overflow = "auto";
+// }
 
-// Close modal on overlay click
-function handleModalClick(e) {
-  if (e.target === e.currentTarget) {
-    closeModal();
-  }
-}
-const modal = document.getElementById("modalOverlay");
-if (modal) modal.addEventListener("click", handleModalClick);
+// // Close modal on overlay click
+// function handleModalClick(e) {
+//   if (e.target === e.currentTarget) {
+//     closeModal();
+//   }
+// }
+// const modal = document.getElementById("modalOverlay");
+// if (modal) modal.addEventListener("click", handleModalClick);
 
 
 // Smooth scrolling for navigation links

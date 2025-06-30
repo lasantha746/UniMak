@@ -1,3 +1,8 @@
+<?php
+$title = isset($_GET['title']) ? htmlspecialchars($_GET['title']) : null;
+$img = isset($_GET['img']) ? htmlspecialchars($_GET['img']) : null;
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -52,10 +57,7 @@
                         <!-- Google Map -->
                         <div class="col-12 col-md-6" data-aos="fade-right" data-aos-delay="400" data-aos-duration="1000">
                             <div class="rounded overflow-hidden shadow">
-                                <iframe
-                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3955.4997400852383!2d80.6351!3d7.4559!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x123456789abcdef!2sUnimak+Pvt+Ltd!5e0!3m2!1sen!2slk!4v1689876543210"
-                                    width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
-                                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3959.2236601978043!2d79.89873779999999!3d7.100056400000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2f1d1dde61e91%3A0x11eba1af3cbb5999!2sUnimak%20Private%20Limited!5e0!3m2!1sen!2slk!4v1751207705660!5m2!1sen!2slk" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                             </div>
                         </div>
 
@@ -70,6 +72,23 @@
                                     <label for="email" class="form-label fw-bold">Email address</label>
                                     <input type="email" class="form-control" id="email" placeholder="name@example.com" required />
                                 </div>
+                                <?php if ($title && $img): ?>
+                                    <div class="container mb-3" data-aos="zoom-in" data-aos-delay="200">
+                                        <div class="card shadow-sm border-0">
+                                            <div class="row g-0">
+                                                <div class="col-md-4">
+                                                    <img src="<?php echo $img; ?>" alt="Product Image" class="img-fluid rounded-start" style="height: 100%; object-fit: cover;">
+                                                </div>
+                                                <div class="col-md-8 d-flex align-items-center">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title mb-2"><?php echo $title; ?></h5>
+                                                        <p class="text-muted mb-0">You are inquiring about this product.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                <?php endif; ?>
                                 <div class="mb-3">
                                     <label for="message" class="form-label fw-bold">Message</label>
                                     <textarea class="form-control" id="message" rows="5" placeholder="Your message..." required></textarea>

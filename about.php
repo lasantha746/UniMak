@@ -65,7 +65,7 @@
                     </div>
                 </div>
             </section>
-          
+
             <section class="">
                 <div class="container">
                     <div class="row">
@@ -78,7 +78,7 @@
                                     <div class="line-fill"></div>
                                 </div>
                                 <div class="row">
-                                    <div class="col-12 col-md-6">
+                                    <div class="col-12 col-md-5">
                                         <p class="parcontact" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
                                             In 2011, Seetha Metal Can Industries expanded its vision by launching
                                             UNIMAK (Pvt) Limited—a dynamic subsidiary created to enhance the
@@ -95,7 +95,7 @@
                                             metal packaging.
                                         </p>
                                     </div>
-                                    <div class="col-12 col-md-6">
+                                    <div class="col-12 col-md-7">
                                         <img src="./images/about02.jpg" alt="Bottle Cap" class="rotate-img3 img-fluid" data-aos="fade-left" data-aos-delay="500" data-aos-duration="1000" />
                                     </div>
                                 </div>
@@ -104,8 +104,8 @@
                     </div>
                 </div>
             </section>
-          
-            <section class="">
+
+            <section class="" style="margin-bottom: 50px;">
                 <div class="container">
                     <div class="row">
                         <div class="col-12 col-md-12 mb-3 mb-lg-0">
@@ -163,7 +163,7 @@
                 </div>
             </section>
 
-             <section class="container mt-3" id="products" style="margin-bottom: 50px;">
+            <!-- <section class="container mt-3" id="products" style="margin-bottom: 50px;">
                 <div class="section-title2">
                     <div class="section-title">
                         <h2>Our Team</h2>
@@ -184,7 +184,7 @@
                         </div>
                     </div>
                     <div data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
-                         <div class="" data-product="2">
+                        <div class="" data-product="2">
                             <img class="product-image rounded-circle" src="./images/profile.jpg" alt="card">
                             <div class="product-info">
                                 <h5 class="text-center">Name Name</h5>
@@ -211,7 +211,7 @@
                         </div>
                     </div>
                     <div data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
-                         <div class="" data-product="5">
+                        <div class="" data-product="5">
                             <img class="product-image rounded-circle" src="./images/profile.jpg" alt="card">
                             <div class="product-info">
                                 <h5 class="text-center">Name Name</h5>
@@ -248,7 +248,7 @@
                     </div>
 
                 </div>
-            </section>
+            </section> -->
 
 
             <!-- Footer -->

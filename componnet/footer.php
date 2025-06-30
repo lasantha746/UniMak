@@ -10,20 +10,19 @@
             <div class="col-md-4 mb-4 ps-4">
                 <h5>Quick Links</h5>
                 <ul class="footer-links ms-3">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#why-us">Why Us</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="index.php">Home</a></li>
+                    <li><a href="about.php">About</a></li>
+                    <li><a href="contact.php">Contact</a></li>
                 </ul>
             </div>
             <div class="col-md-4 mb-4 ps-4">
                 <h5>Our Products</h5>
                 <ul class="footer-links ms-3">
-                    <li><a href="#innovation">Innovation</a></li>
-                    <li><a href="#">Tea Cans</a></li>
-                    <li><a href="#">Paint Cans</a></li>
-                    <li><a href="#">Seed Cans</a></li>
-                    <li><a href="#">Metal Closures</a></li>
+                    <li><a href="category3.php">Innovation</a></li>
+                    <li><a href="category.php">Food Cans</a></li>
+                    <li><a href="category2.php">Paint Cans</a></li>
+                    <li><a href="category4.php">Seed Cans</a></li>
+                    <li><a href="category5.php">Metal Closures</a></li>
                 </ul>
             </div>
             <div class="col-md-4 mb-4 ps-4">

@@ -1,3 +1,14 @@
+<?php
+$products = [
+    [
+        "id" => "21",
+        "title" => "NPVC & LPVC Metal Closures",
+        "description" => "Use for Beverages,Toddy,Dairy and fruit juice Bottles",
+        "image" => "./images/category/cat21.jpg"
+    ],
+];
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -40,24 +51,26 @@
                     </div>
                 </div>
 
-                <div class="product-grid">
-                    <div data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
-                        <div class="product-card" data-product="1">
-                            <img class="product-image" src="./images/category/cat21.jpg" alt="card">
-                            <div class="product-info">
-                                <h3 class="product-title">309 X 309 CAN WITH OR WITHOUT TAGGER</h3>
-                                <div class="button-group">
-                                    <button class="btn-custom btn-see-more inquire_see" onclick="openModal(1)"><span>See More</span></button>
-                                    <button class="btn-custom btn-inquire">
-                                        <div class="roundicon">
-                                            <i class="fa-solid fa-arrow-up-long"></i>
-                                        </div>
-                                        <span>Inquire Now</span>
-                                    </button>
+                <div class="">
+                    <?php foreach ($products as $product): ?>
+                        <div data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+                            <div class="product-card" data-product="1" style="max-width: 350px;">
+                                <img class="product-image" src="<?php echo $product['image']; ?>" alt="card">
+                                <div class="product-info">
+                                    <h3 class="product-title"><?php echo $product['title']; ?></h3>
+                                    <div class="button-group">
+                                        <button class="btn-custom btn-see-more inquire_see" onclick="openModal('<?php echo $product['id']; ?>')"><span>See More</span></button>
+                                        <button onclick="window.location.href = 'contact.php?title=<?php echo urlencode($product['title']); ?>&img=<?php echo urlencode($product['image']); ?>';" class="btn-custom btn-inquire">
+                                            <div class="roundicon">
+                                                <i class="fa-solid fa-arrow-up-long"></i>
+                                            </div>
+                                            <span>Inquire Now</span>
+                                        </button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    <?php endforeach; ?>
                 </div>
             </section>
 
@@ -67,31 +80,33 @@
         </div>
     </div>
 
-    <!-- Modal -->
-    <div class="modal-overlay" id="modalOverlay">
-        <div class="modal-content">
-            <button class="modal-close" onclick="closeModal()">&times;</button>
-            <div class="modal-content2">
-                <div class="modal-image" id="modalImage">
-                    <img class="modal-image" src="./images/category/cat01.jpg" alt="Modal Image">
-                </div>
-                <h3 id="modalTitle">309 X 309 CAN WITH OR WITHOUT TAGGER</h3>
-                <p id="modalDescription">
-                    Our premium food cans are manufactured with state-of-the-art technology ensuring the highest quality and durability. Perfect for food preservation and packaging, these cans are available with or without tagger options to meet your specific requirements.
-                </p>
-                <div class="mt-4">
-                    <h5>Specifications:</h5>
-                    <ul>
-                        <li>Size: 309 x 309</li>
-                        <li>Material: High-grade metal</li>
-                        <li>Available with or without tagger</li>
-                        <li>Food-safe coating</li>
-                        <li>Customizable design options</li>
-                    </ul>
+    <?php foreach ($products as $product): ?>
+        <!-- Modal -->
+        <div class="modal-overlay" id="modalOverlay_<?php echo $product['id']; ?>">
+            <div class="modal-content">
+                <button class="modal-close" onclick="closeModal('<?php echo $product['id']; ?>')">&times;</button>
+                <div class="modal-content2">
+                    <div class="modal-image" id="modalImage">
+                        <img class="modal-image" src="<?php echo $product['image']; ?>" alt="Modal Image">
+                    </div>
+                    <h3 id="modalTitle"><?php echo $product['title']; ?></h3>
+                    <p id="modalDescription">
+                        <?php echo $product['description']; ?>
+                    </p>
+                    <!-- <div class="mt-4">
+                        <h5>Specifications:</h5>
+                        <ul>
+                            <li>Size: 309 x 309</li>
+                            <li>Material: High-grade metal</li>
+                            <li>Available with or without tagger</li>
+                            <li>Food-safe coating</li>
+                            <li>Customizable design options</li>
+                        </ul>
+                    </div> -->
                 </div>
             </div>
         </div>
-    </div>
+    <?php endforeach; ?>
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
@@ -115,6 +130,29 @@
     </script>
     <script>
         AOS.init();
+    </script>
+    <script>
+        function openModal(id) {
+            const modal = document.getElementById("modalOverlay_" + id);
+            modal.classList.add("active");
+            document.body.style.overflow = "hidden";
+        }
+
+        function closeModal(id) {
+            const modal = document.getElementById("modalOverlay_" + id);
+            modal.classList.remove("active");
+            document.body.style.overflow = "auto";
+        }
+
+        // Optional: Close modal when clicking outside the content
+        window.addEventListener('click', function(event) {
+            document.querySelectorAll(".modal-overlay").forEach(modal => {
+                if (event.target === modal) {
+                    modal.classList.remove("active");
+                    document.body.style.overflow = "auto";
+                }
+            });
+        });
     </script>
 </body>
 
