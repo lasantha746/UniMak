@@ -31,87 +31,63 @@
     <div class="wrapper2" id="smooth-wrapper">
         <div class="content2" id="smooth-content">
 
-
-
-
-
-            <!-- Customize Slide -->
-
-
-            <div id="startScreen">
-                <button onclick="startAnimation()">Start</button>
-            </div>
-            <div class="container_ani" onload="">
-                <img src="images/Slider/01/11.jpg" class="layer ice" style="top: 0; z-index: 1" />
-
-                <img src="images/Slider/01/10.png" class="layer bottle" style="top: 0; z-index: 2" />
-                <img src="images/Slider/01/10a.png" class="layer bottle" style="top: 0%; z-index: 3" />
-
-                <img src="images/Slider/01/9.png" class="layer ice" style="top: 0; z-index: 4" />
-
-                <img src="images/Slider/01/8.png" class="layer bottle" style="top: 0; z-index: 5" />
-                <img src="images/Slider/01/8a.png" class="layer bottle" style="top: 0; z-index: 6" />
-
-                <img src="images/Slider/01/7.png" class="layer ice" style="top: 0; z-index: 7" />
-                <img src="images/Slider/01/6.png" class="layer ice" style="top: 0; z-index: 8" />
-                <img src="images/Slider/01/5.png" class="layer ice" style="top: 0; z-index: 9" />
-                <img src="images/Slider/01/4.png" class="layer ice" style="top: 0; z-index: 10" />
-                <img src="images/Slider/01/3.png" class="layer ice" style="top: 0; z-index: 11" />
-
-                <img src="images/Slider/01/2j.png" class="layer tonic" style="top: 0; z-index: 12" />
-                <img src="images/Slider/01/2i.png" class="layer tonic" style="top: 0; z-index: 13" />
-                <img src="images/Slider/01/2h.png" class="layer tonic" style="top: 0; z-index: 14" />
-                <img src="images/Slider/01/2g.png" class="layer tonic" style="top: 0; z-index: 15" />
-                <img src="images/Slider/01/2f.png" class="layer tonic" style="top: 0; z-index: 16" />
-                <img src="images/Slider/01/2e.png" class="layer tonic" style="top: 0; z-index: 17" />
-                <img src="images/Slider/01/2d.png" class="layer tonic" style="top: 0; z-index: 18" />
-                <img src="images/Slider/01/2c.png" class="layer tonic" style="top: 0; z-index: 19" />
-                <img src="images/Slider/01/2b.png" class="layer tonic" style="top: 0; z-index: 20" />
-                <img src="images/Slider/01/2a.png" class="layer tonic" style="top: 0; z-index: 21" />
-
-                <img src="images/Slider/01/1.png" class="layer ice" style="top: 0; z-index: 22" />
-            </div>
-
-            <audio id="bottleSound" src="s1.mp3" preload="auto"></audio>
-            <audio id="tonicSound" src="s2.mp3" preload="auto"></audio>
-
-
-            <!-- Customize Slide -->
-
-
-
-
-
-
-
             <!-- Hero Section -->
             <!-- <section class="hero-section" id="home">
                 <img class="hero-image" src="./images/home.jpg" alt="Hero Image">
             </section> -->
 
-            <!-- <section class="hero-section" id="home">
-                <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img class="d-block w-100 hero-image" src="./images/home.jpg" alt="Hero Image">
+            <div class="slider">
+                <div class="slides">
+                    <!-- Slide 01 -->
+                    <div class="slide active" id="slide01">
+                        <div id="startScreen">
+                            <button onclick="startAnimation()">Start</button>
                         </div>
-                        <div class="carousel-item">
-                            <img class="d-block w-100 hero-image" src="./images/home.jpg" alt="Hero Image">
+                        <div class="container_ani" onload="">
+                            <img src="images/Slider/01/11.jpg" class="layer ice" style="top: 0; z-index: 1" />
+
+                            <img src="images/Slider/01/10.png" class="layer bottle" style="top: 0; z-index: 2" />
+                            <img src="images/Slider/01/10a.png" class="layer bottle" style="top: 0%; z-index: 3" />
+
+                            <img src="images/Slider/01/9.png" class="layer ice" style="top: 0; z-index: 4" />
+
+                            <img src="images/Slider/01/8.png" class="layer bottle" style="top: 0; z-index: 5" />
+                            <img src="images/Slider/01/8a.png" class="layer bottle" style="top: 0; z-index: 6" />
+
+                            <img src="images/Slider/01/7.png" class="layer ice" style="top: 0; z-index: 7" />
+                            <img src="images/Slider/01/6.png" class="layer ice" style="top: 0; z-index: 8" />
+                            <img src="images/Slider/01/5.png" class="layer ice" style="top: 0; z-index: 9" />
+                            <img src="images/Slider/01/4.png" class="layer ice" style="top: 0; z-index: 10" />
+                            <img src="images/Slider/01/3.png" class="layer ice" style="top: 0; z-index: 11" />
+
+                            <img src="images/Slider/01/2j.png" class="layer tonic" style="top: 0; z-index: 12" />
+                            <img src="images/Slider/01/2i.png" class="layer tonic" style="top: 0; z-index: 13" />
+                            <img src="images/Slider/01/2h.png" class="layer tonic" style="top: 0; z-index: 14" />
+                            <img src="images/Slider/01/2g.png" class="layer tonic" style="top: 0; z-index: 15" />
+                            <img src="images/Slider/01/2f.png" class="layer tonic" style="top: 0; z-index: 16" />
+                            <img src="images/Slider/01/2e.png" class="layer tonic" style="top: 0; z-index: 17" />
+                            <img src="images/Slider/01/2d.png" class="layer tonic" style="top: 0; z-index: 18" />
+                            <img src="images/Slider/01/2c.png" class="layer tonic" style="top: 0; z-index: 19" />
+                            <img src="images/Slider/01/2b.png" class="layer tonic" style="top: 0; z-index: 20" />
+                            <img src="images/Slider/01/2a.png" class="layer tonic" style="top: 0; z-index: 21" />
+
+                            <img src="images/Slider/01/1.png" class="layer ice" style="top: 0; z-index: 22" />
                         </div>
-                        <div class="carousel-item">
-                            <img class="d-block w-100 hero-image" src="./images/home.jpg" alt="Hero Image">
-                        </div>
+                        <audio id="bottleSound" src="images/Slider/music/s1.mp3" preload="auto"></audio>
+                        <audio id="tonicSound" src="images/Slider/music/s2.mp3" preload="auto"></audio>
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
+                    <!-- End Slide 01 -->
+                    <img src="images/category.jpg" class="slide " />
+                    <img src="images/category2.jpg" class="slide " />
                 </div>
-            </section> -->
+                <div class="dots">
+                    <span class="dot active" onclick="currentSlide(0)"></span>
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                </div>
+            </div>
+
+
 
             <!-- Section -->
             <section class="container px-0 px-sm-3 px-md-5">
@@ -389,7 +365,7 @@
         });
     </script>
 
-    <!-- Slider -->
+    <!-- Slider 01 -->
     <script>
         const bottles = document.querySelectorAll('.bottle');
         const tonics = document.querySelectorAll('.tonic');
@@ -434,6 +410,59 @@
                 showBottles();
             }, 10);
         }
+
+        function resetAnimation() {
+            bottles.forEach(bottle => {
+                bottle.classList.remove('active');
+            });
+
+            tonics.forEach(tonic => {
+                tonic.classList.remove('active', 'animate');
+            });
+
+        }
+    </script>
+
+    <script>
+        let slideIndex = 0;
+        const slides = document.querySelectorAll(".slide");
+        const dots = document.querySelectorAll(".dot");
+
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                slide.classList.remove("active");
+                dots[i].classList.remove("active");
+                if (i === index) {
+                    slide.classList.add("active");
+                    dots[i].classList.add("active");
+                }
+            });
+        }
+
+        // function currentSlide(index) {
+        //     slideIndex = index;
+        //     showSlide(slideIndex);
+        //     if (slideIndex === 0) {
+        //         startAnimation();
+        //     } else {
+        //         setTimeout(() => {
+        //             resetAnimation();
+        //         }, 1000);
+        //     }
+        // }
+
+        // Optional: auto slide
+        setInterval(() => {
+            slideIndex = (slideIndex + 1) % slides.length;
+            showSlide(slideIndex);
+            if (slideIndex === 0) {
+                startAnimation();
+            } else {
+                setTimeout(() => {
+                    resetAnimation();
+                }, 1000);
+            }
+        }, 7000);
     </script>
 </body>
 
