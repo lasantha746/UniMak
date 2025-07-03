@@ -7,22 +7,22 @@
             </h2>
         </div>
         <div class="row">
-            <div class="col-md-4 mb-4 ps-4">
+            <div class="col-md-3 mb-4 ps-4">
                 <h5>Quick Links</h5>
                 <ul class="footer-links ms-3">
                     <li><a href="index.php">Home</a></li>
-                    <li><a href="about.php">About</a></li>
-                    <li><a href="contact.php">Contact</a></li>
+                    <li><a href="about.php">About Us</a></li>
+                    <li><a href="contact.php">Contact Us</a></li>
                 </ul>
             </div>
-            <div class="col-md-4 mb-4 ps-4">
+            <div class="col-md-5 mb-4 ps-4">
                 <h5>Our Products</h5>
                 <ul class="footer-links ms-3">
-                    <li><a href="category3.php">Innovation</a></li>
-                    <li><a href="category.php">Food Cans</a></li>
-                    <li><a href="category2.php">Paint Cans</a></li>
+                    <!-- <li><a href="category3.php">Innovation</a></li> -->
+                    <li><a href="category.php">Tea Cans - Round Cans / Square Cans</a></li>
+                    <li><a href="category2.php">General Cans</a></li>
                     <li><a href="category4.php">Seed Cans</a></li>
-                    <li><a href="category5.php">Metal Closures</a></li>
+                    <li><a href="category5.php">Metal Closures (Crown Cork)</a></li>
                 </ul>
             </div>
             <div class="col-md-4 mb-4 ps-4">

@@ -1,18 +1,6 @@
 <?php
 $products = [
     [
-        "id" => "01",
-        "title" => "301x301 Plain Slip on Lid Can & 309x309 Printed Leaver Lid Can with Tagger",
-        "description" => "100g / 175g / 225g / 250g / 290g Tea Cans",
-        "image" => "./images/category/cat01.jpg"
-    ],
-    [
-        "id" => "02",
-        "title" => "5 Lb & 10 Lb Square Can with Leaver Lid",
-        "description" => "1Kg to 5 Kg Tea Can",
-        "image" => "./images/category/cat02.jpg"
-    ],
-    [
         "id" => "03",
         "title" => "307Ø & 406Ø Round Can with Wire Shacle & Plastic Lid",
         "description" => "200g & 300g Tea Can",
@@ -23,6 +11,20 @@ $products = [
         "title" => "509Ø Round Can with Leaver Lid & Tagger",
         "description" => "250g & 400g D21Tea Can",
         "image" => "./images/category/cat04.jpg"
+    ],
+];
+$products2 = [
+    [
+        "id" => "01",
+        "title" => "301x301 Plain Slip on Lid Can & 309x309 Printed Leaver Lid Can with Tagger",
+        "description" => "100g / 175g / 225g / 250g / 290g Tea Cans",
+        "image" => "./images/category/cat01.jpg"
+    ],
+    [
+        "id" => "02",
+        "title" => "5 Lb & 10 Lb Square Can with Leaver Lid",
+        "description" => "1Kg to 5 Kg Tea Can",
+        "image" => "./images/category/cat02.jpg"
     ],
     [
         "id" => "05",
@@ -70,11 +72,47 @@ $products = [
                 <img class="hero-image" src="./images/category.jpg" alt="Hero Image">
             </section>
 
+
+            <!-- Products Section -->
+            <section class="container" id="products" style="margin-bottom: 50px;">
+                <div class="section-title2">
+                    <div class="section-title">
+                        <h2>Square Cans</h2>
+                        <div class="animated-line">
+                            <div class="line-fill"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-grid">
+                    <?php foreach ($products2 as $product): ?>
+                        <div data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+                            <div class="product-card" data-product="1">
+                                <img class="product-image" src="<?php echo $product['image']; ?>" alt="card">
+                                <div class="product-info">
+                                    <h3 class="product-title"><?php echo $product['title']; ?></h3>
+                                    <div class="button-group">
+                                        <button class="btn-custom btn-see-more inquire_see" onclick="openModal('<?php echo $product['id']; ?>')"><span>See More</span></button>
+                                        <button onclick="window.location.href = 'contact.php?title=<?php echo urlencode($product['title']); ?>&img=<?php echo urlencode($product['image']); ?>';" class="btn-custom btn-inquire">
+                                            <div class="roundicon">
+                                                <i class="fa-solid fa-arrow-up-long"></i>
+                                            </div>
+                                            <span>Inquire Now</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    <?php endforeach; ?>
+
+                </div>
+            </section>
+
             <!-- Products Section -->
             <section class="container" id="products" style="margin-bottom: 100px;">
                 <div class="section-title2">
                     <div class="section-title">
-                        <h2>Food Cans</h2>
+                        <h2>Round Cans</h2>
                         <div class="animated-line">
                             <div class="line-fill"></div>
                         </div>
@@ -101,8 +139,9 @@ $products = [
                             </div>
                         </div>
                     <?php endforeach; ?>
-
+                    <div></div>
                 </div>
+
             </section>
 
             <!-- Footer -->
@@ -124,7 +163,7 @@ $products = [
                     <p id="modalDescription">
                         <?php echo $product['description']; ?>
                     </p>
-                <!-- <div class="mt-4">
+                    <!-- <div class="mt-4">
                         <h5>Specifications:</h5>
                         <ul>
                             <li>Size: 309 x 309</li>

@@ -80,7 +80,7 @@ $products = [
             <section class="container" id="products" style="margin-bottom: 100px;">
                 <div class="section-title2">
                     <div class="section-title">
-                        <h2>Paint Cans</h2>
+                        <h2>General Cans</h2>
                         <div class="animated-line">
                             <div class="line-fill"></div>
                         </div>

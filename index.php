@@ -161,7 +161,7 @@
                         <div data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
                             <div class="product-card_home mb-5" data-product="1">
                                 <div class="product-info_home">
-                                    <h3 class="product-title_home">Tea Cans</h3>
+                                    <h3 class="product-title_home">Tea Cans - Round Cans / Square Cans</h3>
                                 </div>
                                 <div class="imagecontent">
                                     <img class="product-image_home" src="./images/productRange/mpr01.png" alt="card">
@@ -171,7 +171,7 @@
                         <div data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
                             <div class="product-card_home mb-5" data-product="1">
                                 <div class="product-info_home">
-                                    <h3 class="product-title_home">Paint Cans</h3>
+                                    <h3 class="product-title_home">General Cans</h3>
                                 </div>
                                 <div class="imagecontent">
                                     <img class="product-image_home" src="./images/productRange/mpr02.png" alt="card">
@@ -195,7 +195,7 @@
                         <div data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
                             <div class="product-card_home mb-5" data-product="1">
                                 <div class="product-info_home">
-                                    <h3 class="product-title_home">Metal Closures</h3>
+                                    <h3 class="product-title_home">Metal Closures (Crown Cork)</h3>
                                 </div>
                                 <div class="imagecontent">
                                     <img class="product-image_home" src="./images/productRange/mpr04.png" alt="card">

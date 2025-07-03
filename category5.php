@@ -6,6 +6,12 @@ $products = [
         "description" => "Use for Beverages,Toddy,Dairy and fruit juice Bottles",
         "image" => "./images/category/cat21.jpg"
     ],
+    [
+        "id" => "22",
+        "title" => "NPVC & LPVC Metal Closures",
+        "description" => "Use for Beverages,Toddy,Dairy and fruit juice Bottles",
+        "image" => "./images/category/cat21.jpg"
+    ],
 ];
 ?>
 
@@ -44,17 +50,17 @@ $products = [
             <section class="container" id="products" style="margin-bottom: 100px;">
                 <div class="section-title2">
                     <div class="section-title">
-                        <h2>Metal Closures</h2>
+                        <h2>Metal Closures (Crown Cork)</h2>
                         <div class="animated-line">
                             <div class="line-fill"></div>
                         </div>
                     </div>
                 </div>
 
-                <div class="">
+                <div class="product-grid">
                     <?php foreach ($products as $product): ?>
                         <div data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
-                            <div class="product-card" data-product="1" style="max-width: 350px;">
+                            <div class="product-card" data-product="1">
                                 <img class="product-image" src="<?php echo $product['image']; ?>" alt="card">
                                 <div class="product-info">
                                     <h3 class="product-title"><?php echo $product['title']; ?></h3>
@@ -71,6 +77,7 @@ $products = [
                             </div>
                         </div>
                     <?php endforeach; ?>
+                    <div></div>
                 </div>
             </section>
 
