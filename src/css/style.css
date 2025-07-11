@@ -1332,3 +1332,25 @@
         .dot.active {
             background-color: #013e73;
         }
+
+
+        .glide {
+            width: 100%;
+            padding: 20px 0;
+            background: #fff;
+        }
+
+        .glide__slide img {
+            height: 100px;
+            margin: 0 auto;
+            transition: transform 0.3s ease;
+        }
+
+        .glide__slide img:hover {
+            transform: scale(1.1);
+        }
+
+        .glide__slides {
+            display: flex;
+            align-items: center;
+        }

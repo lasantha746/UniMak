@@ -1,3 +1,63 @@
+<?php
+$logos = [
+    [
+        "id" => "01",
+        "name" => "Asianpaints",
+        "image" => "./images/Logo/cl-14.jpg"
+    ],
+    [
+        "id" => "02",
+        "name" => "Elephant House",
+        "image" => "./images/Logo/cl-15.jpg"
+    ],
+    [
+        "id" => "03",
+        "name" => "Nippon Paint",
+        "image" => "./images/Logo/cl-16.jpg"
+    ],
+    [
+        "id" => "04",
+        "name" => "Lankem",
+        "image" => "./images/Logo/cl-17.jpg"
+    ],
+    [
+        "id" => "05",
+        "name" => "Jones",
+        "image" => "./images/Logo/cl-18.jpg"
+    ],
+    [
+        "id" => "06",
+        "name" => "CHB",
+        "image" => "./images/Logo/cl-19.jpg"
+    ],
+    [
+        "id" => "07",
+        "name" => "Lipton",
+        "image" => "./images/Logo/cl-20.jpg"
+    ],
+    [
+        "id" => "08",
+        "name" => "CocaCola",
+        "image" => "./images/Logo/cl-21.jpg"
+    ],
+    [
+        "id" => "09",
+        "name" => "Milco",
+        "image" => "./images/Logo/cl-22.jpg"
+    ],
+    [
+        "id" => "10",
+        "name" => "Van Rees",
+        "image" => "./images/Logo/cl-23.jpg"
+    ],
+    [
+        "id" => "11",
+        "name" => "Finlays",
+        "image" => "./images/Logo/cl-24.jpg"
+    ],
+];
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,6 +66,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Unimak</title>
     <link rel="icon" href="./images/favicon.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,8 +81,9 @@
 
     <!-- Page Loader -->
     <?php
-    // include('componnet/loading2.php');
+    include('componnet/loading2.php');
     ?>
+
 
     <!-- Navigation -->
     <?php
@@ -86,8 +148,6 @@
                     <span class="dot" onclick="currentSlide(2)"></span>
                 </div>
             </div>
-
-
 
             <!-- Section -->
             <section class="container px-0 px-sm-3 px-md-5">
@@ -267,6 +327,33 @@
                 </div>
             </section>
 
+            <section class="pb-4">
+                <div class="container ps-3 ps-md-5">
+                    <div class="row">
+                        <div class="col-12 col-md-8 mb-lg-0">
+                            <div class="section-title">
+                                <h2 class="mb-3" data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000">Our Clients</h2>
+                                <div class="animated-line" data-aos="fade-right" data-aos-delay="300" data-aos-duration="1000">
+                                    <div class="line-fill"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="glide">
+                                <div class="glide__track" data-glide-el="track">
+                                    <ul class="glide__slides">
+                                        <?php foreach ($logos as $logo): ?>
+                                            <li class="glide__slide"><img src="<?php echo $logo['image']; ?>" alt="<?php echo $logo['name']; ?>"></li>
+                                        <?php endforeach; ?>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
             <section class="" style="background-color: #e1e4ff;">
                 <div class="container ps-3 ps-md-5">
                     <div class="stats py-5 d-flex flex-wrap justify-content-between">
@@ -302,7 +389,6 @@
                 </div>
             </section>
 
-
             <!-- Footer -->
             <?php include('componnet/footer.php'); ?>
 
@@ -317,7 +403,29 @@
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollSmoother.min.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+    <script>
+        new Glide('.glide', {
+            type: 'carousel',
+            perView: 5,
+            focusAt: 'center',
+            autoplay: 2000,
+            hoverpause: true,
+            gap: 30,
+            animationDuration: 1000,
+            breakpoints: {
+                1024: {
+                    perView: 4
+                },
+                768: {
+                    perView: 3
+                },
+                480: {
+                    perView: 2
+                }
+            }
+        }).mount();
+    </script>
     <script>
         gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 
@@ -364,7 +472,6 @@
             counters.forEach(counter => observer.observe(counter));
         });
     </script>
-
     <!-- Slider 01 -->
     <script>
         const bottles = document.querySelectorAll('.bottle');
@@ -422,7 +529,6 @@
 
         }
     </script>
-
     <script>
         let slideIndex = 0;
         const slides = document.querySelectorAll(".slide");
