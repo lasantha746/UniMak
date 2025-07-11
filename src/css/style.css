@@ -812,6 +812,9 @@
             align-items: center;
         }
 
+        .footerCop .visibleSm {
+            display: none;
+        }
 
         .navdeit ul {
             list-style-type: none;
@@ -852,6 +855,12 @@
         /* .navdeit ul li a:focus::after, */
         .navdeit ul li.active a::after {
             width: 100%;
+        }
+
+        .topsubmenu li a:hover::after,
+        /* .navdeit ul li a:focus::after, */
+        .topsubmenu li.active a::after {
+            width: 0 !important;
         }
 
 
@@ -904,8 +913,8 @@
 
         .why-choose-us {
             position: relative;
-            background: linear-gradient(to right, #ffffff, #b3baff);
-            background: linear-gradient(to right, #ffffff 0%, #ffffff 50%, #f7f7ff 70%, #f7f7ff 70%, #b3baff 100%);
+            /* background: linear-gradient(to right, #ffffff, #b3baff); */
+            /* background: linear-gradient(to right, #ffffff 0%, #ffffff 50%, #f7f7ff 70%, #f7f7ff 70%, #b3baff 100%); */
         }
 
         .cert-img {
@@ -917,7 +926,8 @@
         .rotate-img {
             width: 100%;
             height: auto;
-            max-width: 200px;
+            /* max-width: 200px; */
+            border-radius: 24px;
             /* z-index: -1; */
         }
 
@@ -1072,6 +1082,10 @@
 
             .footerCop {
                 justify-content: center;
+            }
+
+            .footerCop .visibleSm {
+                display: block;
             }
         }
 
@@ -1341,7 +1355,8 @@
         }
 
         .glide__slide img {
-            height: 100px;
+            width: 100%;
+            height: auto;
             margin: 0 auto;
             transition: transform 0.3s ease;
         }
@@ -1353,4 +1368,21 @@
         .glide__slides {
             display: flex;
             align-items: center;
+        }
+
+
+
+        .image-slider img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            transition: opacity 0.5s ease-in-out;
+            opacity: 0;
+            z-index: 0;
+        }
+
+        .image-slider img.active {
+            position: relative;
+            opacity: 1;
+            z-index: 1;
         }

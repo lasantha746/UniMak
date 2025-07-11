@@ -11,7 +11,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    animation: loaderFadeOut 0.5s ease 6s forwards;
+     opacity: 1;
+  transition: opacity 0.5s ease;
   }
 
   /* Centered GIF */
@@ -21,8 +22,7 @@
     height: 200px;
     background: url('./images/new.gif') no-repeat center/contain;
     display: block;
-    opacity: 0;
-    animation: gifFadeIn 0.5s ease forwards, gifFadeOut 0.5s ease 5.5s forwards;
+  animation: gifBlink 1.5s ease-in-out infinite;
   }
 
   /* Loading bar container */
@@ -45,31 +45,22 @@
     height: 100%;
     width: 0%;
     background: #4fc3f7;
-    animation: fillSmooth 6s linear forwards;
+    animation: fillLoop 6s linear infinite;
   }
 
-  /* Fade animations */
-  @keyframes gifFadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
-  }
+  /* Looping gif opacity flicker */
+@keyframes gifBlink {
+  0% { opacity: 0.6; }
+  50% { opacity: 1; }
+  100% { opacity: 0.6; }
+}
 
-  @keyframes gifFadeOut {
-    0% { opacity: 1; }
-    100% { opacity: 0; }
-  }
+/* Looping bar fill */
+@keyframes fillLoop {
+  0% { width: 0%; }
+  100% { width: 100%; }
+}
 
-  @keyframes loaderFadeOut {
-    to {
-      opacity: 0;
-      visibility: hidden;
-    }
-  }
-
-  @keyframes fillSmooth {
-    0%   { width: 0%; }
-    100% { width: 100%; }
-  }
 </style>
 
 <!-- HTML STRUCTURE -->

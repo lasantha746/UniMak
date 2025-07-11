@@ -3,14 +3,16 @@ $products = [
     [
         "id" => "21",
         "title" => "NPVC & LPVC Metal Closures",
-        "description" => "Use for Beverages,Toddy,Dairy and fruit juice Bottles",
-        "image" => "./images/category/cat21.jpg"
+        "description" => "PVC Plastisol and Non PVC crown corks",
+        "image" => "./images/category/cat21.jpg",
+        "image2" => "./images/category/cat22.jpg"
     ],
     [
         "id" => "22",
         "title" => "NPVC & LPVC Metal Closures",
-        "description" => "Use for Beverages,Toddy,Dairy and fruit juice Bottles",
-        "image" => "./images/category/cat21.jpg"
+        "description" => "PVC Plastisol and Non PVC crown corks",
+        "image" => "./images/category/cat23.jpg",
+        "image2" => "./images/category/cat24.jpg"
     ],
 ];
 ?>
@@ -61,7 +63,10 @@ $products = [
                     <?php foreach ($products as $product): ?>
                         <div data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
                             <div class="product-card" data-product="1">
-                                <img class="product-image" src="<?php echo $product['image']; ?>" alt="card">
+                                <div class="image-slider">
+                                    <img class="product-image active" src="<?php echo $product['image']; ?>" alt="card">
+                                    <img class="product-image" src="<?php echo $product['image2']; ?>" alt="card">
+                                </div>
                                 <div class="product-info">
                                     <h3 class="product-title"><?php echo $product['title']; ?></h3>
                                     <div class="button-group">
@@ -94,11 +99,23 @@ $products = [
                 <button class="modal-close" onclick="closeModal('<?php echo $product['id']; ?>')">&times;</button>
                 <div class="modal-content2">
                     <div class="modal-image" id="modalImage">
-                        <img class="modal-image" src="<?php echo $product['image']; ?>" alt="Modal Image">
+                        <div class="image-slider">
+                            <img class="modal-image active" src="<?php echo $product['image']; ?>" alt="Modal Image">
+                            <img class="modal-image" src="<?php echo $product['image2']; ?>" alt="Modal Image">
+                        </div>
                     </div>
                     <h3 id="modalTitle"><?php echo $product['title']; ?></h3>
                     <p id="modalDescription">
                         <?php echo $product['description']; ?>
+                    </p>
+
+                    <p>
+                        PVC Plastisol &nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;&nbsp; Toddy, Dairy and Fruit juice <br>
+                        (Short)
+                        <br>
+                        <br>
+                        Non PVC &nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;&nbsp; Alcoholic and carbonated beverages <br>
+                        (Intermediate)
                     </p>
                     <!-- <div class="mt-4">
                         <h5>Specifications:</h5>
@@ -161,6 +178,23 @@ $products = [
             });
         });
     </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const sliders = document.querySelectorAll('.image-slider');
+
+            sliders.forEach((slider) => {
+                const images = slider.querySelectorAll('img');
+                let current = 0;
+
+                setInterval(() => {
+                    images[current].classList.remove('active');
+                    current = (current + 1) % images.length;
+                    images[current].classList.add('active');
+                }, 4000); // Switch every 2 seconds
+            });
+        });
+    </script>
+
 </body>
 
 </html>

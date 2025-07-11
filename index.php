@@ -102,9 +102,9 @@ $logos = [
                 <div class="slides">
                     <!-- Slide 01 -->
                     <div class="slide active" id="slide01">
-                        <div id="startScreen">
+                        <!-- <div id="startScreen">
                             <button onclick="startAnimation()">Start</button>
-                        </div>
+                        </div> -->
                         <div class="container_ani" onload="">
                             <img src="images/Slider/01/11.jpg" class="layer ice" style="top: 0; z-index: 1" />
 
@@ -141,12 +141,18 @@ $logos = [
                     <!-- End Slide 01 -->
                     <img src="images/category.jpg" class="slide " />
                     <img src="images/category2.jpg" class="slide " />
+                    <img src="images/category.jpg" class="slide " />
                 </div>
                 <div class="dots">
                     <span class="dot active" onclick="currentSlide(0)"></span>
                     <span class="dot" onclick="currentSlide(1)"></span>
                     <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
                 </div>
+
+                <button id="soundToggleBtn" style="z-index: 100; position: relative; bottom: 55px; right: -20px; background: white; border: 2px solid black; cursor: pointer; width: 35px; height: 35px; border-radius: 50%;">
+                    <img id="soundIcon" src="./images/sound-off.png" alt="Sound Toggle" width="20" height="20">
+                </button>
             </div>
 
             <!-- Section -->
@@ -297,7 +303,7 @@ $logos = [
             <section class="why-choose-us pb-4">
                 <div class="container ps-3 ps-md-5">
                     <div class="row">
-                        <div class="col-12 col-md-8 mb-4 mb-lg-0">
+                        <div class="col-12 col-md-6">
                             <div class="section-title">
                                 <h2 class="mb-3" data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000">Why Choose Us</h2>
                                 <div class="animated-line mb-3" data-aos="fade-right" data-aos-delay="300" data-aos-duration="1000">
@@ -314,14 +320,14 @@ $logos = [
                                     <span>See More</span>
                                 </button>
 
-                                <div class="mt-5 certifications mt-4 d-flex gap-3 flex-wrap">
-                                    <img src="./images/fssc.png" alt="FSSC 22000" class="cert-img" data-aos="fade-up" data-aos-delay="800" data-aos-duration="1000" />
-                                    <img src="./images/iso.png" alt="ISO Certified" class="cert-img" data-aos="fade-up" data-aos-delay="900" data-aos-duration="1000" />
-                                </div>
                             </div>
                         </div>
-                        <div class="col-12 col-md-4 text-center d-flex justify-content-center align-items-center pt-0 pb-5">
-                            <img src="./images/cup.png" alt="Bottle Cap" class="img-fluid rotate-img" data-aos="fade-left" data-aos-delay="500" data-aos-duration="1000" />
+                        <div class="col-12 col-md-6 pt-3 pt-md-5 pb-md-5">
+                            <img src="./images/whyus.jpg" alt="Bottle Cap" class="img-fluid rotate-img mt-md-5" data-aos="fade-left" data-aos-delay="500" data-aos-duration="1000" />
+                            <div class="mt-3 certifications mt-4 d-flex gap-3 flex-wrap">
+                                <img src="./images/fssc.png" alt="FSSC 22000" class="cert-img" data-aos="fade-up" data-aos-delay="800" data-aos-duration="1000" />
+                                <img src="./images/iso.png" alt="ISO Certified" class="cert-img" data-aos="fade-up" data-aos-delay="900" data-aos-duration="1000" />
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -331,7 +337,7 @@ $logos = [
                 <div class="container ps-3 ps-md-5">
                     <div class="row">
                         <div class="col-12 col-md-8 mb-lg-0">
-                            <div class="section-title">
+                            <div class="section-title" style="margin-bottom: 5px;">
                                 <h2 class="mb-3" data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000">Our Clients</h2>
                                 <div class="animated-line" data-aos="fade-right" data-aos-delay="300" data-aos-duration="1000">
                                     <div class="line-fill"></div>
@@ -411,17 +417,17 @@ $logos = [
             focusAt: 'center',
             autoplay: 2000,
             hoverpause: true,
-            gap: 30,
+            gap: 5,
             animationDuration: 1000,
             breakpoints: {
                 1024: {
-                    perView: 4
+                    perView: 5
                 },
                 768: {
-                    perView: 3
+                    perView: 4
                 },
                 480: {
-                    perView: 2
+                    perView: 3
                 }
             }
         }).mount();
@@ -472,17 +478,89 @@ $logos = [
             counters.forEach(counter => observer.observe(counter));
         });
     </script>
-    <!-- Slider 01 -->
+    <!-- Slider-->
     <script>
+        //image all load
+        function waitForImagesToLoad(callback) {
+            const images = document.images;
+            let loadedCount = 0;
+            const total = images.length;
+
+            // Create a promise that resolves after all images are loaded
+            const imagesLoadedPromise = new Promise((resolve) => {
+                if (total === 0) return resolve();
+
+                for (let img of images) {
+                    if (img.complete) {
+                        loadedCount++;
+                        if (loadedCount === total) resolve();
+                    } else {
+                        img.addEventListener('load', () => {
+                            loadedCount++;
+                            if (loadedCount === total) resolve();
+                        });
+                        img.addEventListener('error', () => {
+                            loadedCount++;
+                            if (loadedCount === total) resolve();
+                        });
+                    }
+                }
+            });
+
+            // Create a promise that resolves after 5 seconds
+            const minimumWait = new Promise((resolve) => setTimeout(resolve, 5000));
+
+            // Wait for both
+            Promise.all([imagesLoadedPromise, minimumWait]).then(callback);
+        }
+
+        window.addEventListener("load", () => {
+            waitForImagesToLoad(() => {
+                // Fade out loader
+                const loader = document.querySelector('.page-loader');
+                if (loader) {
+                    loader.style.opacity = "0";
+                    setTimeout(() => {
+                        loader.style.display = "none";
+                    }, 600);
+                }
+
+                // Start animation
+                startAnimation();
+                setupSoundToggle();
+
+                // Optional: auto slide
+                setInterval(() => {
+                    slideIndex = (slideIndex + 1) % slides.length;
+                    showSlide(slideIndex);
+                    if (slideIndex === 0) {
+                        startAnimation();
+                    } else {
+                        setTimeout(() => {
+                            resetAnimation();
+                        }, 1000);
+                    }
+                }, 7000);
+            });
+        });
+
+
+        let soundVolume = false;
+        let userSoundPreference = false;
+        let autoMuted = false;
+
+        // Slider 01 ***************
         const bottles = document.querySelectorAll('.bottle');
         const tonics = document.querySelectorAll('.tonic');
         const bottleSound = document.getElementById('bottleSound');
         const tonicSound = document.getElementById('tonicSound');
 
         function playSound(sound) {
-            return sound.play().catch((e) => {
-                console.warn("Sound play failed:", e);
-            });
+            if (soundVolume) {
+                return sound.play().catch((e) => {
+                    console.warn("Sound play failed:", e);
+                });
+            }
         }
 
         async function showBottles(index = 0) {
@@ -512,7 +590,8 @@ $logos = [
         }
 
         function startAnimation() {
-            document.getElementById('startScreen').style.display = 'none';
+            // alert("Start Animation");
+            // document.getElementById('startScreen').style.display = 'none';
             setTimeout(() => {
                 showBottles();
             }, 10);
@@ -528,8 +607,8 @@ $logos = [
             });
 
         }
-    </script>
-    <script>
+
+        // Slider With Dots *********************
         let slideIndex = 0;
         const slides = document.querySelectorAll(".slide");
         const dots = document.querySelectorAll(".dot");
@@ -557,18 +636,36 @@ $logos = [
         //     }
         // }
 
-        // Optional: auto slide
-        setInterval(() => {
-            slideIndex = (slideIndex + 1) % slides.length;
-            showSlide(slideIndex);
-            if (slideIndex === 0) {
-                startAnimation();
-            } else {
-                setTimeout(() => {
-                    resetAnimation();
-                }, 1000);
+        function setupSoundToggle() {
+            const soundBtn = document.getElementById('soundToggleBtn');
+            const soundIcon = document.getElementById('soundIcon');
+
+            soundBtn.addEventListener('click', () => {
+                soundVolume = !soundVolume;
+                userSoundPreference = soundVolume;
+
+                // Play feedback click sound if sound turned on
+                if (soundVolume) {
+                    soundIcon.src = "./images/sound-on.png";
+                } else {
+                    soundIcon.src = "./images/sound-off.png";
+                }
+            });
+        }
+        // Scroll detection to mute/unmute
+        window.addEventListener('scroll', () => {
+            const viewportHeight = window.innerHeight;
+            const scrollThreshold = viewportHeight;
+            const scrolledDown = window.scrollY > scrollThreshold;
+
+            if (scrolledDown && !autoMuted) {
+                autoMuted = true;
+                soundVolume = false;
+            } else if (!scrolledDown && autoMuted) {
+                autoMuted = false;
+                soundVolume = userSoundPreference;
             }
-        }, 7000);
+        });
     </script>
 </body>
 
