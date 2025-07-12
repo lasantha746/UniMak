@@ -100,11 +100,55 @@ $logos = [
 
             <div class="slider">
                 <div class="slides">
+
+                    <!-- Slide 04 -->
+                    <div class="slide active" id="slide04">
+                        <div class="container_ani" onload="">
+                            <img src="images/Slider/04/9.png" class="layer2 ice" style="top: 0; z-index: 1" />
+
+                            <img src="images/Slider/04/8.png" class="layer2 tineCan" style="top: 0; z-index: 7" />
+                            <img src="images/Slider/04/7.png" class="layer2 tineCan" style="top: 0; z-index: 2" />
+                            <img src="images/Slider/04/6.png" class="layer2 tineCan" style="top: 0; z-index: 3" />
+                            <img src="images/Slider/04/5.png" class="layer2 tineCan" style="top: 0; z-index: 4" />
+                            <img src="images/Slider/04/4.png" class="layer2 tineCan" style="top: 0; z-index: 5" />
+                            <img src="images/Slider/04/3.png" class="layer2 tineCan" style="top: 0; z-index: 6" />
+                            <img src="images/Slider/04/2.png" class="layer2 ice" style="top: 0; z-index: 8" />
+                            <img src="images/Slider/04/1b.png" class="layer2 smoke smoke1" style="top: 0; z-index: 9" />
+                            <img src="images/Slider/04/1a.png" class="layer2 smoke smoke2" style="top: 0; z-index: 10" />
+                        </div>
+                        <audio id="tineSound" src="images/Slider/music/s3.mp3" preload="auto"></audio>
+                    </div>
+                    <!-- End Slide 04 -->
+
+                    <!-- Slide 03 -->
+                    <div class="slide" id="slide03">
+                        <div class="container_ani" onload="">
+                            <img src="images/Slider/03/12.png" class="layer ice" style="top: 0; z-index: 1" />
+
+                            <img src="images/Slider/03/9.png" class="layer tineRight" style="top: 0; z-index: 4" />
+                            <img src="images/Slider/03/8.png" class="layer tineRight" style="top: 0; z-index: 2" />
+                            <img src="images/Slider/03/13.png" class="layer tineRight" style="top: 0; z-index: 7" />
+                            <img src="images/Slider/03/10.png" class="layer tineRight" style="top: 0; z-index: 5" />
+
+                            <img src="images/Slider/03/7.png" class="layer tineLeft" style="top: 0; z-index: 3" />
+                            <img src="images/Slider/03/11.png" class="layer tineLeft" style="top: 0; z-index: 6" />
+
+                            <img src="images/Slider/03/1.png" class="layer tineLeftGroup" style="top: 0; z-index: 8" />
+
+                            <img src="images/Slider/03/2.png" class="layer line01" style="top: 0; z-index: 9" />
+                            <img src="images/Slider/03/3.png" class="layer line02" style="top: 0; z-index: 10" />
+                            <img src="images/Slider/03/4.png" class="layer line01" style="top: 0; z-index: 11" />
+                            <img src="images/Slider/03/5.png" class="layer line02" style="top: 0; z-index: 12" />
+
+                            <img src="images/Slider/03/6.png" class="layer tineLeftGroup" style="top: 0; z-index: 13" />
+
+                        </div>
+                        <audio id="slide3Sound" src="images/Slider/music/s3.mp3" preload="auto"></audio>
+                    </div>
+                    <!-- End Slide 03 -->
+
                     <!-- Slide 01 -->
-                    <div class="slide active" id="slide01">
-                        <!-- <div id="startScreen">
-                            <button onclick="startAnimation()">Start</button>
-                        </div> -->
+                    <div class="slide" id="slide01">
                         <div class="container_ani" onload="">
                             <img src="images/Slider/01/11.jpg" class="layer ice" style="top: 0; z-index: 1" />
 
@@ -139,9 +183,26 @@ $logos = [
                         <audio id="tonicSound" src="images/Slider/music/s2.mp3" preload="auto"></audio>
                     </div>
                     <!-- End Slide 01 -->
-                    <img src="images/category.jpg" class="slide " />
-                    <img src="images/category2.jpg" class="slide " />
-                    <img src="images/category.jpg" class="slide " />
+
+                    <!-- Slide 02 -->
+                    <div class="slide" id="slide02">
+                        <div class="container_ani" onload="">
+                            <img src="images/Slider/02/7.jpg" class="layer ice" style="top: 0; z-index: 1" />
+                            <img src="images/Slider/02/6.png" class="layer ice" style="top: 0; z-index: 7" />
+
+                            <img src="images/Slider/02/5.png" class="layer hand" style="top: 0; z-index: 6" />
+
+                            <img src="images/Slider/02/4.png" class="layer tonik" style="top: 0; z-index: 5" />
+                            <img src="images/Slider/02/3.png" class="layer tonik" style="top: 0; z-index: 4" />
+                            <img src="images/Slider/02/2.png" class="layer tonik" style="top: 0; z-index: 3" />
+                            <img src="images/Slider/02/1.png" class="layer tonik" style="top: 0; z-index: 2" />
+
+
+                        </div>
+                        <audio id="slide4Sound" src="images/Slider/music/s3.mp3" preload="auto"></audio>
+                    </div>
+                    <!-- End Slide 02 -->
+
                 </div>
                 <div class="dots">
                     <span class="dot active" onclick="currentSlide(0)"></span>
@@ -525,19 +586,36 @@ $logos = [
                     }, 600);
                 }
 
-                // Start animation
-                startAnimation();
                 setupSoundToggle();
+                // Start animation
+                startAnimation2();
 
                 // Optional: auto slide
                 setInterval(() => {
                     slideIndex = (slideIndex + 1) % slides.length;
                     showSlide(slideIndex);
                     if (slideIndex === 0) {
+                        startAnimation2();
+                        //clear
+                        resetAnimation3();
+                    } else if (slideIndex === 1) {
+                        startSlide03Animation();
+                        //clear
+                        resetAnimation4();
+                    } else if (slideIndex === 2) {
                         startAnimation();
+                        //clear
+                        resetAnimation();
+                    } else if (slideIndex === 3) {
+                        startAnimation4();
+                        //clear
+                        resetAnimation2();
                     } else {
                         setTimeout(() => {
                             resetAnimation();
+                            resetAnimation2();
+                            resetAnimation3();
+                            resetAnimation4();
                         }, 1000);
                     }
                 }, 7000);
@@ -606,6 +684,136 @@ $logos = [
                 tonic.classList.remove('active', 'animate');
             });
 
+        }
+
+
+        // Slider 2 ***********/
+        async function startAnimation2() {
+            const tineCans = document.querySelectorAll("#slide04 .tineCan");
+            const smokeLayers = document.querySelectorAll("#slide04 .smoke");
+            const tineSound = document.getElementById("tineSound");
+
+            // Animate each tineCan one by one
+            await playSound(tineSound);
+
+            tineCans.forEach((img, index) => {
+                setTimeout(() => {
+                    img.classList.add("animate");
+                    // img.style.animation = "moveFromLeft 1s ease-out forwards";
+                }, index * 200); // delay between each image
+            });
+
+        };
+
+        function resetAnimation2() {
+            const tineCans = document.querySelectorAll("#slide04 .tineCan");
+            tineCans.forEach(tineCan => {
+                tineCan.classList.remove('animate');
+            });
+        }
+
+        // Slider 3 *********************
+        async function startSlide03Animation() {
+            const tineLefts = document.querySelectorAll("#slide03 .tineLeft");
+            const tineRights = document.querySelectorAll("#slide03 .tineRight");
+            const line01 = document.querySelectorAll("#slide03 .line01");
+            const line02 = document.querySelectorAll("#slide03 .line02");
+            const tineLeftGroup = document.querySelectorAll("#slide03 .tineLeftGroup");
+            const audio = document.getElementById("slide3Sound");
+
+            // Play the sound at the start
+            await playSound(audio);
+
+            // Animate left and right images at the same time (but each set one-by-one)
+            const maxCount = Math.max(tineLefts.length, tineRights.length);
+            for (let i = 0; i < maxCount; i++) {
+                if (i < tineLefts.length) {
+                    tineLefts[i].classList.add("animate");
+                }
+                if (i < tineRights.length) {
+                    tineRights[i].classList.add("animate2");
+                }
+                await new Promise(resolve => setTimeout(resolve, 200));
+            }
+
+            tineLeftGroup.forEach((img) => {
+                img.classList.add("animate");
+            });
+            line01.forEach((img) => {
+                img.classList.add("animateFline");
+            });
+            line02.forEach((img) => {
+                img.classList.add("animateFline");
+            });
+
+            await new Promise(resolve => setTimeout(resolve, 1200));
+
+            line01.forEach((img) => {
+                // img.style.animation = "lineAni 3s ease-out forwards";
+                img.classList.add("animateline");
+            });
+            line02.forEach((img) => {
+                // img.style.animation = "lineAni 3s ease-out forwards";
+                img.classList.add("animateline");
+            });
+        }
+
+        function resetAnimation3() {
+            const tineLefts = document.querySelectorAll("#slide03 .tineLeft");
+            const tineRights = document.querySelectorAll("#slide03 .tineRight");
+            const line01 = document.querySelectorAll("#slide03 .line01");
+            const line02 = document.querySelectorAll("#slide03 .line02");
+            const tineLeftGroup = document.querySelectorAll("#slide03 .tineLeftGroup");
+            tineLefts.forEach(tineLeft => {
+                tineLeft.classList.remove('animate');
+            });
+            tineLeftGroup.forEach(tineLeftGrou => {
+                tineLeftGrou.classList.remove('animate');
+            });
+            tineRights.forEach(tineRight => {
+                tineRight.classList.remove('animate2');
+            });
+            line01.forEach(tineRight => {
+                tineRight.classList.remove('animateFline');
+                tineRight.classList.remove('animateline');
+            });
+            line02.forEach(tineRight => {
+                tineRight.classList.remove('animateFline');
+                tineRight.classList.remove('animateline');
+            });
+        }
+
+        // Slider 4 ***********/
+        async function startAnimation4() {
+            const tonik = document.querySelectorAll("#slide02 .tonik");
+            const hand = document.querySelectorAll("#slide02 .hand");
+            const slide4Sound = document.getElementById("slide4Sound");
+
+            // Animate each tineCan one by one
+            await playSound(slide4Sound);
+
+            tonik.forEach((img, index) => {
+                setTimeout(() => {
+                    img.classList.add("animatetonik");
+                }, index * 200);
+            });
+            hand.forEach((img, index) => {
+                setTimeout(() => {
+                    img.classList.add("animatehand");
+                }, index * 200);
+            });
+
+        };
+
+        function resetAnimation4() {
+            const tonik = document.querySelectorAll("#slide02 .tonik");
+            const hand = document.querySelectorAll("#slide02 .hand");
+            tonik.forEach(toniks => {
+                toniks.classList.remove('animatetonik');
+            });
+            hand.forEach(hands => {
+                hands.classList.remove('animatehand');
+            });
         }
 
         // Slider With Dots *********************

@@ -1214,12 +1214,14 @@
             overflow: hidden;
         }
 
+
         .layer {
             position: absolute;
             left: 50%;
             transform: translateX(-50%);
             transition: all 1s ease-out;
             height: 100vh;
+            min-width: 100%;
         }
 
         .ice {
@@ -1289,6 +1291,221 @@
         }
 
 
+
+        .layer2 {
+            position: absolute;
+            /* opacity: 0; */
+            left: 50%;
+            transform: translateX(-50%);
+            transition: all 1s ease-out;
+            height: 100vh;
+            min-width: 100%;
+        }
+
+        .tineCan {
+            transform: translate(-100%, 0);
+            opacity: 0;
+        }
+
+        @keyframes moveFromLeft {
+            0% {
+                transform: translate(-100%, 0);
+                opacity: 0;
+            }
+
+            100% {
+                transform: translate(-50%, 0) rotate(0deg);
+                opacity: 1;
+            }
+        }
+
+        .tineCan.animate {
+            animation: moveFromLeft 1s ease-out forwards;
+        }
+
+        @keyframes smokeFade {
+            0% {
+                opacity: 0;
+            }
+
+            50% {
+                opacity: 1;
+            }
+
+            100% {
+                opacity: 0;
+            }
+        }
+
+        /* Common style */
+        .smoke {
+            position: absolute;
+            opacity: 0;
+            pointer-events: none;
+
+        }
+
+        /* First smoke starts immediately */
+        .smoke1 {
+            animation: smokeFade 4s ease-in-out infinite;
+            animation-delay: 0s;
+        }
+
+        /* Second smoke starts halfway (after 2s), creating alternation */
+        .smoke2 {
+            animation: smokeFade 4s ease-in-out infinite;
+            animation-delay: 2s;
+        }
+
+
+        /* All layers start off-screen and hidden */
+        .tineLeft {
+            transform: translate(-100%, 0);
+            opacity: 0;
+        }
+
+        .tineLeftGroup {
+            transform: translate(-100%, 0);
+            opacity: 0;
+        }
+
+        .tineRight {
+            transform: translate(100%, 0);
+            opacity: 0;
+        }
+
+        .tonik {
+            transform: translate(100%, 0);
+            opacity: 0;
+        }
+
+        .tineLeft.animate {
+            animation: slideFromLeft 1s ease-out forwards;
+        }
+
+        .tineLeftGroup.animate {
+            animation: slideFromLeft 1s ease-out forwards;
+        }
+
+        .tineRight.animate2 {
+            animation: slideFromRight 1.5s ease-out forwards;
+        }
+
+        .tonik.animatetonik {
+            animation: slideFromRightTonik 1s ease-out forwards;
+        }
+
+        .hand {
+            transform: translate(-100%, -50%);
+            opacity: 0;
+        }
+
+        .hand.animatehand {
+            animation: slideFromRighthand 1.5s ease-out forwards;
+        }
+
+        @keyframes slideFromRighthand {
+            0% {
+                transform: translate(-100%, -50%);
+                opacity: 0;
+            }
+
+            100% {
+                transform: translate(-50%, 0) rotate(0deg);
+                opacity: 1;
+            }
+        }
+
+        /* Right to left */
+        @keyframes slideFromRightTonik {
+            0% {
+                transform: translate(100%, 0);
+                opacity: 0;
+            }
+
+            100% {
+                transform: translate(-50%, 0) rotate(0deg);
+                opacity: 1;
+            }
+        }
+
+        /* Left to right */
+        @keyframes slideFromLeft {
+            0% {
+                transform: translate(-100%, 0);
+                opacity: 0;
+            }
+
+            100% {
+                transform: translate(-50%, 0) rotate(0deg);
+                opacity: 1;
+            }
+        }
+
+        /* Right to left */
+        @keyframes slideFromRight {
+            0% {
+                transform: translate(100%, 0);
+                opacity: 0;
+            }
+
+            100% {
+                transform: translate(-50%, 0) rotate(0deg);
+                opacity: 1;
+            }
+        }
+
+        .line01 {
+            transform: translate(-100%, -20px);
+        }
+
+        .line02 {
+            transform: translate(-100%, -20px);
+        }
+
+        .animateFline {
+            animation: slideFromLeft2 1s ease-out forwards;
+        }
+
+        .animateline {
+            animation: lineAni 3s ease-out forwards;
+        }
+
+        @keyframes slideFromLeft2 {
+            0% {
+                transform: translate(-100%, -20px);
+                opacity: 1;
+            }
+
+            100% {
+                transform: translate(-50%, -20px) rotate(0deg);
+                opacity: 1;
+            }
+        }
+
+        @keyframes lineAni {
+            0% {
+                transform: translate(-50%, -20px);
+                opacity: 1;
+            }
+
+            100% {
+                transform: translate(-50%, 0) rotate(0deg);
+                opacity: 1;
+            }
+        }
+
+        /* @keyframes lineAni2 {
+            0% {
+                transform: translate(-50%, 0);
+                opacity: 1;
+            }
+
+            100% {
+                transform: translate(-100%, -20px);
+                opacity: 1;
+            }
+        } */
 
 
         .slider {
