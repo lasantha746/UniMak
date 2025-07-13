@@ -166,13 +166,13 @@ $logos = [
                             <img src="images/Slider/01/4.png" class="layer ice" style="top: 0; z-index: 10" />
                             <img src="images/Slider/01/3.png" class="layer ice" style="top: 0; z-index: 11" />
 
-                            <img src="images/Slider/01/2l.png" class="layer tonic" style="top: 0; z-index: 12" />
                             <img src="images/Slider/01/2j.png" class="layer tonic" style="top: 0; z-index: 12" />
                             <img src="images/Slider/01/2i.png" class="layer tonic" style="top: 0; z-index: 13" />
                             <img src="images/Slider/01/2h.png" class="layer tonic" style="top: 0; z-index: 14" />
                             <img src="images/Slider/01/2g.png" class="layer tonic" style="top: 0; z-index: 15" />
                             <img src="images/Slider/01/2f.png" class="layer tonic" style="top: 0; z-index: 16" />
                             <img src="images/Slider/01/2e.png" class="layer tonic" style="top: 0; z-index: 17" />
+                            <img src="images/Slider/01/2l.png" class="layer tonic" style="top: 0; z-index: 12" />
                             <img src="images/Slider/01/2d.png" class="layer tonic" style="top: 0; z-index: 18" />
                             <img src="images/Slider/01/2c.png" class="layer tonic" style="top: 0; z-index: 19" />
                             <img src="images/Slider/01/2b.png" class="layer tonic" style="top: 0; z-index: 20" />
@@ -241,7 +241,7 @@ $logos = [
                 </div>
                 <div class="px-0 px-sm-3 px-md-5">
                     <div class="section-title d-flex flex-column align-items-center text-center" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
-                        <button class="btn-custom btn-inquire btn-inquire_see">
+                        <button onclick="window.location.href = 'about.php';" class="btn-custom btn-inquire btn-inquire_see">
                             <div class="roundicon roundicon_see">
                                 <i class="fa-solid fa-arrow-up-long"></i>
                             </div>
