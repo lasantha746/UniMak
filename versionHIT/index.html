@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Version</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            background: #111;
+            position: relative;
+            font-family: Arial, sans-serif;
+            user-select: none;
+        }
+
+        .bubble {
+            position: absolute;
+            border-radius: 50%;
+            opacity: 0.4;
+            animation: floatBubble 20s linear infinite;
+            mix-blend-mode: screen;
+        }
+
+        @keyframes floatBubble {
+            from {
+                transform: translateY(100vh);
+                opacity: 0.7;
+            }
+
+            to {
+                transform: translateY(-120vh) rotate(360deg);
+                opacity: 0.1;
+            }
+        }
+
+        .outer-circle {
+            width: 300px;
+            height: 300px;
+            background: conic-gradient(#007BFF, #00CFFF, #007BFF);
+            border: 4px solid #fff;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(0deg);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            cursor: grab;
+        }
+
+        .outer-circle:active {
+            cursor: grabbing;
+        }
+
+        .outer-circle::before {
+            content: '';
+            position: absolute;
+            width: 90%;
+            height: 90%;
+            border: 2px dashed #fff;
+            border-radius: 50%;
+            opacity: 0.5;
+        }
+
+        .inner-circle {
+            width: 80px;
+            height: 80px;
+            background: #fff;
+            border: 3px solid #007BFF;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #000;
+            font-weight: bold;
+            font-size: 14px;
+            z-index: 1;
+            position: relative;
+        }
+
+        .popup-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+        }
+
+        .popup-content {
+            background: linear-gradient(145deg, #ffffff, #f0f0f0);
+            padding: 25px 20px;
+            border-radius: 15px;
+            text-align: center;
+            width: 340px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+            position: relative;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            animation: fadeIn 0.3s ease;
+        }
+
+        .popup-content .logo-container {
+            background: #fff;
+            padding: 15px;
+            border-radius: 50%;
+            margin: 0 auto 15px;
+            width: 100px;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+            overflow: hidden;
+        }
+
+        .popup-content img {
+            max-width: 80px;
+            max-height: 80px;
+        }
+
+        .popup-content h2 {
+            margin: 10px 0 8px;
+            font-size: 22px;
+            color: #333;
+        }
+
+        .popup-content .slogan {
+            font-style: italic;
+            color: #666;
+            margin: 5px 0 15px;
+        }
+
+        .popup-content .website a {
+            color: #007BFF;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .popup-content .website a:hover {
+            text-decoration: underline;
+        }
+
+        .popup-close {
+            position: absolute;
+            top: 12px;
+            right: 12px;
+            background: #f44336;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .popup-close:hover {
+            background: #d32f2f;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: scale(0.9);
+            }
+
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="outer-circle" id="outerCircle">
+        <div class="inner-circle">Version</div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+    <script>
+        const _0xa8163f = _0x15d9;
+        (function (_0x1f93a8, _0x2e2b1f) {
+            const _0x457b44 = _0x15d9,
+                _0x3d5908 = _0x1f93a8();
+            while (!![]) {
+                try {
+                    const _0x54fd2c =
+                        (parseInt(_0x457b44(0xb9)) / 0x1) * (parseInt(_0x457b44(0xdd)) / 0x2) +
+                        parseInt(_0x457b44(0xe2)) / 0x3 +
+                        (parseInt(_0x457b44(0xb5)) / 0x4) * (parseInt(_0x457b44(0xbe)) / 0x5) +
+                        (-parseInt(_0x457b44(0xcf)) / 0x6) *
+                        (-parseInt(_0x457b44(0xdb)) / 0x7) +
+                        -parseInt(_0x457b44(0xc3)) / 0x8 +
+                        parseInt(_0x457b44(0xc9)) / 0x9 +
+                        (-parseInt(_0x457b44(0xd1)) / 0xa) * (parseInt(_0x457b44(0xce)) / 0xb);
+                    if (_0x54fd2c === _0x2e2b1f) break;
+                    else _0x3d5908["push"](_0x3d5908["shift"]());
+                } catch (_0x4baad7) {
+                    _0x3d5908["push"](_0x3d5908["shift"]());
+                }
+            }
+        })(_0x3f19, 0x68eeb);
+        function _0x15d9(_0x48f0fb, _0x3feced) {
+            const _0x3f1920 = _0x3f19();
+            return (
+                (_0x15d9 = function (_0x15d98c, _0x9cd612) {
+                    _0x15d98c = _0x15d98c - 0xaf;
+                    let _0x50fddf = _0x3f1920[_0x15d98c];
+                    return _0x50fddf;
+                }),
+                _0x15d9(_0x48f0fb, _0x3feced)
+            );
+        }
+        const outerCircle = document["getElementById"](_0xa8163f(0xb7));
+        function _0x3f19() {
+            const _0x574240 = [
+                "2490272XTTAvg",
+                "logo",
+                "decrypt",
+                "deg)",
+                ".popup-close",
+                "getBoundingClientRect",
+                "1075374ncBaVm",
+                "<div\x20class=\x22popup-content\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<button\x20class=\x22popup-close\x22>&times;</button>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22logo-container\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<img\x20src=\x22",
+                "Error\x20decrypting!",
+                "translate(-50%,\x20-50%)\x20rotate(",
+                "top",
+                "33jUuTxI",
+                "1054890iadZXz",
+                "floor",
+                "2575820xwntoc",
+                "createElement",
+                ".bubble",
+                "AES",
+                "log",
+                "random",
+                "animationDuration",
+                "website",
+                "addEventListener",
+                "className",
+                "21pWAeNc",
+                "\x22</p>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<p\x20class=\x22website\x22><a\x20href=\x22",
+                "10bDvfZb",
+                "style",
+                "target",
+                "popup-overlay",
+                "\x22\x20alt=\x22Company\x20Logo\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<h2>",
+                "697101GdrmeZ",
+                "clientX",
+                "querySelector",
+                "contains",
+                "click",
+                "mousemove",
+                "</h2>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<p\x20class=\x22slogan\x22>\x22",
+                "\x22\x20target=\x22_blank\x22>",
+                "backgroundColor",
+                "height",
+                "parse",
+                "add",
+                "left",
+                "toString",
+                "innerHTML",
+                "remove",
+                "664220CzJXBQ",
+                "mousedown",
+                "outerCircle",
+                "U2FsdGVkX1+5wQB6nW0qlv08USHbbxXAvZC6T9P44NQl2rngZ4z1ajrrqpscXkVuC08X2aVfhzdLjAR952MsfF9lGj7VUe7jtRIo2Sio2xSPXVIHzakavX4i8BGa0Z6b9ZipTecByo8goXzPcMREtvcUEexV2s+6V360WKXqoWLZKK6vn1RIICkaHWoBA2gOh2G62XR9dkJJK+p0qyKp3ZRqpQfvDkf4I0S6oKoPjtY=",
+                "60485lmsXns",
+                "clientY",
+                "slogan",
+                "abs",
+                "div",
+                "10faednX",
+                "width",
+                "transform",
+                "enc",
+                "body",
+            ];
+            _0x3f19 = function () {
+                return _0x574240;
+            };
+            return _0x3f19();
+        }
+        let rotation = 0x0,
+            rotationSpeed = 0x0,
+            isDragging = ![],
+            startX = 0x0,
+            startY = 0x0;
+        const rect = outerCircle[_0xa8163f(0xc8)](),
+            centerX = rect[_0xa8163f(0xb1)] + rect["width"] / 0x2,
+            centerY = rect[_0xa8163f(0xcd)] + rect[_0xa8163f(0xeb)] / 0x2;
+        function animate() {
+            const _0x3e0c8b = _0xa8163f;
+            (rotation += rotationSpeed),
+                (rotation %= 0x168),
+                (outerCircle[_0x3e0c8b(0xde)][_0x3e0c8b(0xc0)] =
+                    _0x3e0c8b(0xcc) + rotation + _0x3e0c8b(0xc6)),
+                (rotationSpeed *= 0.98);
+            if (Math["abs"](rotationSpeed) < 0.001) rotationSpeed = 0x0;
+            requestAnimationFrame(animate);
+        }
+        animate(),
+            outerCircle["addEventListener"](_0xa8163f(0xb6), (_0x20e1b4) => {
+                (isDragging = !![]),
+                    (startX = _0x20e1b4["clientX"]),
+                    (startY = _0x20e1b4["clientY"]);
+            }),
+            document[_0xa8163f(0xd9)]("mouseup", () => {
+                isDragging = ![];
+            }),
+            document[_0xa8163f(0xd9)](_0xa8163f(0xe7), (_0x1ec5ba) => {
+                const _0x2d7bb3 = _0xa8163f;
+                if (!isDragging) return;
+                const _0x2dcac8 = _0x1ec5ba["clientX"] - startX,
+                    _0x569da3 = _0x1ec5ba[_0x2d7bb3(0xba)] - startY,
+                    _0x15dca6 = startX - centerX,
+                    _0x2f2d2e = startY - centerY;
+                let _0x4215e9 = 0x0;
+                Math["abs"](_0x15dca6) > Math[_0x2d7bb3(0xbc)](_0x2f2d2e)
+                    ? _0x15dca6 < 0x0
+                        ? (_0x4215e9 = _0x569da3 * -0.05)
+                        : (_0x4215e9 = _0x569da3 * 0.05)
+                    : _0x2f2d2e < 0x0
+                        ? (_0x4215e9 = _0x2dcac8 * 0.05)
+                        : (_0x4215e9 = _0x2dcac8 * -0.05),
+                    (rotationSpeed += _0x4215e9),
+                    (startX = _0x1ec5ba[_0x2d7bb3(0xe3)]),
+                    (startY = _0x1ec5ba[_0x2d7bb3(0xba)]);
+            });
+        function randomColor() {
+            const _0x5bf843 = _0xa8163f;
+            return (
+                "#" +
+                Math[_0x5bf843(0xd0)](Math["random"]() * 0xffffff)[_0x5bf843(0xb2)](0x10)
+            );
+        }
+        function changeBubblesColor() {
+            const _0x506e3b = _0xa8163f;
+            document["querySelectorAll"](_0x506e3b(0xd3))["forEach"]((_0x1dbbb4) => {
+                const _0x3a04d2 = _0x506e3b;
+                _0x1dbbb4["style"][_0x3a04d2(0xea)] = randomColor();
+            });
+        }
+        function createBubble() {
+            const _0x57c603 = _0xa8163f,
+                _0x5653fc = document[_0x57c603(0xd2)](_0x57c603(0xbd)),
+                _0x49b711 = Math[_0x57c603(0xd6)]() * 0x28 + 0x14;
+            _0x5653fc["classList"][_0x57c603(0xb0)]("bubble"),
+                (_0x5653fc[_0x57c603(0xde)][_0x57c603(0xbf)] = _0x49b711 + "px"),
+                (_0x5653fc[_0x57c603(0xde)][_0x57c603(0xeb)] = _0x49b711 + "px"),
+                (_0x5653fc[_0x57c603(0xde)][_0x57c603(0xb1)] =
+                    Math["random"]() * window["innerWidth"] + "px"),
+                (_0x5653fc[_0x57c603(0xde)][_0x57c603(0xea)] = randomColor()),
+                (_0x5653fc[_0x57c603(0xde)][_0x57c603(0xd7)] =
+                    0xa + Math[_0x57c603(0xd6)]() * 0x14 + "s"),
+                document[_0x57c603(0xc2)]["appendChild"](_0x5653fc),
+                setTimeout(() => {
+                    const _0x50f30a = _0x57c603;
+                    _0x5653fc[_0x50f30a(0xb4)]();
+                }, 0x61a8);
+        }
+        setInterval(createBubble, 0x1f4),
+            document[_0xa8163f(0xc2)]["addEventListener"](
+                _0xa8163f(0xe6),
+                function (_0x22ef4c) {
+                    const _0x304e17 = _0xa8163f;
+                    !outerCircle[_0x304e17(0xe5)](_0x22ef4c[_0x304e17(0xdf)]) &&
+                        changeBubblesColor();
+                }
+            );
+        const encryptedData = _0xa8163f(0xb8);
+        window["unlockDeveloper"] = function (_0x3112f8) {
+            const _0x5ca177 = _0xa8163f;
+            try {
+                const _0x2c6896 = CryptoJS[_0x5ca177(0xd4)][_0x5ca177(0xc5)](
+                    encryptedData,
+                    _0x3112f8
+                ),
+                    _0x3c23df = _0x2c6896[_0x5ca177(0xb2)](CryptoJS[_0x5ca177(0xc1)]["Utf8"]);
+                if (_0x3c23df) {
+                    const _0x2cf6ea = JSON[_0x5ca177(0xaf)](_0x3c23df),
+                        _0x362fa3 = document[_0x5ca177(0xd2)](_0x5ca177(0xbd));
+                    (_0x362fa3[_0x5ca177(0xda)] = _0x5ca177(0xe0)),
+                        (_0x362fa3[_0x5ca177(0xb3)] =
+                            _0x5ca177(0xca) +
+                            _0x2cf6ea[_0x5ca177(0xc4)] +
+                            _0x5ca177(0xe1) +
+                            _0x2cf6ea["company"] +
+                            _0x5ca177(0xe8) +
+                            _0x2cf6ea[_0x5ca177(0xbb)] +
+                            _0x5ca177(0xdc) +
+                            _0x2cf6ea[_0x5ca177(0xd8)] +
+                            _0x5ca177(0xe9) +
+                            _0x2cf6ea[_0x5ca177(0xd8)] +
+                            "</a></p>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20"),
+                        document[_0x5ca177(0xc2)]["appendChild"](_0x362fa3),
+                        _0x362fa3[_0x5ca177(0xe4)](_0x5ca177(0xc7))[_0x5ca177(0xd9)](
+                            _0x5ca177(0xe6),
+                            () => {
+                                const _0x9608b0 = _0x5ca177;
+                                _0x362fa3[_0x9608b0(0xb4)]();
+                            }
+                        );
+                } else
+                    console["log"]("Wrong\x20password\x20or\x20failed\x20to\x20decrypt!");
+            } catch (_0x210d97) {
+                console[_0x5ca177(0xd5)](_0x5ca177(0xcb));
+            }
+        };
+    </script>
+</body>
+
+</html>
