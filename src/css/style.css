@@ -1094,23 +1094,23 @@
 
 
             .slider {
-                height: 40vh !important;
+                height: 35vh !important;
             }
 
             .slide {
-                height: 40vh !important;
+                height: 35vh !important;
             }
 
             .container_ani {
-                height: 40vh !important;
+                height: 35vh !important;
             }
 
             .layer {
-                height: 40vh !important;
+                height: 35vh !important;
             }
 
             .layer2 {
-                height: 40vh !important;
+                height: 35vh !important;
             }
 
         }
@@ -1373,13 +1373,13 @@
 
         /* First smoke starts immediately */
         .smoke1 {
-            animation: smokeFade 2s ease-in-out infinite;
+            animation: smokeFade 4s ease-in-out infinite;
             animation-delay: 0s;
         }
 
         /* Second smoke starts halfway (after 2s), creating alternation */
         .smoke2 {
-            animation: smokeFade 2s ease-in-out infinite;
+            animation: smokeFade 4s ease-in-out infinite;
             animation-delay: 1s;
         }
 
@@ -1423,7 +1423,7 @@
 
         .hand {
             transform: translate(-100%, -50%);
-            opacity: 0;
+            opacity: 1;
         }
 
         .hand.animatehand {
@@ -1433,7 +1433,7 @@
         @keyframes slideFromRighthand {
             0% {
                 transform: translate(-100%, -50%);
-                opacity: 0;
+                opacity: 1;
             }
 
             100% {

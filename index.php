@@ -113,8 +113,8 @@ $logos = [
                             <img src="images/Slider/04/4.png" class="layer2 tineCan" style="top: 0; z-index: 5" />
                             <img src="images/Slider/04/3.png" class="layer2 tineCan" style="top: 0; z-index: 6" />
                             <img src="images/Slider/04/2.png" class="layer2 ice" style="top: 0; z-index: 8" />
-                            <img src="images/Slider/04/1b.png" class="layer2 smoke smoke1" style="top: 0; z-index: 9" />
-                            <img src="images/Slider/04/1a.png" class="layer2 smoke smoke2" style="top: 0; z-index: 10" />
+                            <img src="images/Slider/04/1a.png" class="layer2 smoke smoke1" style="top: 0; z-index: 9" />
+                            <img src="images/Slider/04/1b.png" class="layer2 smoke smoke2" style="top: 0; z-index: 10" />
                         </div>
                         <audio id="tineSound" src="images/Slider/music/s3.mp3" preload="auto"></audio>
                     </div>
@@ -166,6 +166,7 @@ $logos = [
                             <img src="images/Slider/01/4.png" class="layer ice" style="top: 0; z-index: 10" />
                             <img src="images/Slider/01/3.png" class="layer ice" style="top: 0; z-index: 11" />
 
+                            <img src="images/Slider/01/2l.png" class="layer tonic" style="top: 0; z-index: 12" />
                             <img src="images/Slider/01/2j.png" class="layer tonic" style="top: 0; z-index: 12" />
                             <img src="images/Slider/01/2i.png" class="layer tonic" style="top: 0; z-index: 13" />
                             <img src="images/Slider/01/2h.png" class="layer tonic" style="top: 0; z-index: 14" />
@@ -211,9 +212,9 @@ $logos = [
                     <span class="dot" onclick="currentSlide(3)"></span>
                 </div>
 
-                <button id="soundToggleBtn" style="z-index: 100; position: relative; bottom: 55px; right: -20px; background: white; border: 2px solid black; cursor: pointer; width: 35px; height: 35px; border-radius: 50%;">
+                <!-- <button id="soundToggleBtn" style="z-index: 100; position: relative; bottom: 55px; right: -20px; background: white; border: 2px solid black; cursor: pointer; width: 35px; height: 35px; border-radius: 50%;">
                     <img id="soundIcon" src="./images/sound-off.png" alt="Sound Toggle" width="20" height="20">
-                </button>
+                </button> -->
             </div>
 
             <!-- Section -->
@@ -261,7 +262,7 @@ $logos = [
                     </div>
                     <div class="col-12 d-flex justify-content-end">
                         <div class="d-flex justify-content-end" style="height: 34px;" data-aos="fade-left" data-aos-delay="900" data-aos-duration="1000">
-                            <button class="btn-custom btn-inquire btn-inquire_see">
+                            <button onclick="window.location.href = 'category3.php';" class="btn-custom btn-inquire btn-inquire_see">
                                 <div class="roundicon roundicon_see">
                                     <i class="fa-solid fa-arrow-up-long"></i>
                                 </div>
@@ -278,7 +279,7 @@ $logos = [
                     </div>
                     <div class="col-12 d-flex justify-content-center">
                         <div class="d-flex justify-content-end" style="height: 34px;" data-aos="fade-left" data-aos-delay="900" data-aos-duration="1000">
-                            <button class="btn-custom btn-inquire btn-inquire_see">
+                            <button onclick="window.location.href = 'category3.php';" class="btn-custom btn-inquire btn-inquire_see">
                                 <div class="roundicon roundicon_see">
                                     <i class="fa-solid fa-arrow-up-long"></i>
                                 </div>
@@ -602,7 +603,7 @@ $logos = [
                     }, 600);
                 }
 
-                setupSoundToggle();
+                //setupSoundToggle();
                 // Start animation
                 startAnimation2();
 

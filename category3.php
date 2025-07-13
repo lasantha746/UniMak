@@ -56,7 +56,7 @@ $products = [
             <section class="container" id="products" style="margin-bottom: 100px;">
                 <div class="section-title2">
                     <div class="section-title">
-                        <h2>Innovational Can</h2>
+                        <h2>Cans for Spices</h2>
                         <div class="animated-line">
                             <div class="line-fill"></div>
                         </div>
