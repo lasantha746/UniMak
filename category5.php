@@ -2,15 +2,15 @@
 $products = [
     [
         "id" => "21",
-        "title" => "NPVC & LPVC Metal Closures",
-        "description" => "PVC Plastisol and Non PVC crown corks",
+        "title" => "NPVC Metal Closures",
+        "description" => "Non PVC crown corks",
         "image" => "./images/category/cat21.jpg",
         "image2" => "./images/category/cat22.jpg"
     ],
     [
         "id" => "22",
-        "title" => "NPVC & LPVC Metal Closures",
-        "description" => "PVC Plastisol and Non PVC crown corks",
+        "title" => "PVC Plastisol Metal Closures",
+        "description" => "PVC Plastisol crown corks",
         "image" => "./images/category/cat23.jpg",
         "image2" => "./images/category/cat24.jpg"
     ],
@@ -110,12 +110,22 @@ $products = [
                     </p>
 
                     <p>
-                        PVC Plastisol &nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;&nbsp; Toddy, Dairy and Fruit juice <br>
-                        (Short)
+                        <?php
+                        if ($product['id'] == '21') {
+                        ?>
+                            Alcoholic and carbonated beverages (Intermediate)
+                        <?php
+                        } else {
+                        ?>
+                            Toddy, Dairy and Fruit juice (Short)
+
+                        <?php
+                        }
+                        ?>
+
                         <br>
                         <br>
-                        Non PVC &nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;&nbsp; Alcoholic and carbonated beverages <br>
-                        (Intermediate)
+
                     </p>
                     <!-- <div class="mt-4">
                         <h5>Specifications:</h5>

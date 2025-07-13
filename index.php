@@ -133,17 +133,17 @@ $logos = [
                             <img src="images/Slider/03/7.png" class="layer tineLeft" style="top: 0; z-index: 3" />
                             <img src="images/Slider/03/11.png" class="layer tineLeft" style="top: 0; z-index: 6" />
 
-                            <img src="images/Slider/03/1.png" class="layer tineLeftGroup" style="top: 0; z-index: 8" />
+                            <img src="images/Slider/03/1.png" class="layer" style="top: 0; z-index: 8" />
 
                             <img src="images/Slider/03/2.png" class="layer line01" style="top: 0; z-index: 9" />
                             <img src="images/Slider/03/3.png" class="layer line02" style="top: 0; z-index: 10" />
                             <img src="images/Slider/03/4.png" class="layer line01" style="top: 0; z-index: 11" />
                             <img src="images/Slider/03/5.png" class="layer line02" style="top: 0; z-index: 12" />
 
-                            <img src="images/Slider/03/6.png" class="layer tineLeftGroup" style="top: 0; z-index: 13" />
+                            <img src="images/Slider/03/6.png" class="layer" style="top: 0; z-index: 13" />
 
                         </div>
-                        <audio id="slide3Sound" src="images/Slider/music/s3.mp3" preload="auto"></audio>
+                        <audio id="slide3Sound" src="images/Slider/music/s4.mp3" preload="auto"></audio>
                     </div>
                     <!-- End Slide 03 -->
 
@@ -199,7 +199,7 @@ $logos = [
 
 
                         </div>
-                        <audio id="slide4Sound" src="images/Slider/music/s3.mp3" preload="auto"></audio>
+                        <audio id="slide4Sound" src="images/Slider/music/s4.mp3" preload="auto"></audio>
                     </div>
                     <!-- End Slide 02 -->
 
@@ -218,7 +218,7 @@ $logos = [
 
             <!-- Section -->
             <section class="container px-0 px-sm-3 px-md-5">
-                <div class="mt-5 px-0 px-sm-3 px-md-5">
+                <div class="mt-0 mt-md-5 px-0 px-sm-3 px-md-5">
                     <div class="section-title d-flex flex-column align-items-center text-center" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
                         <h2>State of the art Manufacturing Plant with
                             Impressive Production Capacity</h2>
@@ -251,16 +251,32 @@ $logos = [
             </section>
 
             <section class="subIMG-section d-flex flex-column align-items-center" id="home">
-                <img class="mt-5" src="./images/homesubbg.png" alt="Hero Image">
-                <img class="mt-5 subIMG" src="./images/homesub.png" alt="Hero Image" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
-                <div class="row d-flex flex-column align-items-center see_btn">
+                <img class="mt-0 mt-md-5" src="./images/homesubbg.png" alt="Hero Image">
+                <img class="mt-4 mt-md-5 subIMG" src="./images/homesub.png" alt="Hero Image" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
+                <div class="d-none d-md-block row d-flex flex-column align-items-center see_btn">
                     <div class="col-12 d-flex justify-content-end text-end">
                         <h2 data-aos="fade-left" data-aos-delay="700" data-aos-duration="1000">
-                            Innovational <br>
-                            Product Collection
+                            Cans for Spices
                         </h2>
                     </div>
                     <div class="col-12 d-flex justify-content-end">
+                        <div class="d-flex justify-content-end" style="height: 34px;" data-aos="fade-left" data-aos-delay="900" data-aos-duration="1000">
+                            <button class="btn-custom btn-inquire btn-inquire_see">
+                                <div class="roundicon roundicon_see">
+                                    <i class="fa-solid fa-arrow-up-long"></i>
+                                </div>
+                                <span>See More</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-block d-md-none row d-flex flex-column align-items-center mt-5" style="z-index: 10;">
+                    <div class="col-12 d-flex justify-content-center text-center mt-3">
+                        <h2 data-aos="fade-left" data-aos-delay="700" data-aos-duration="1000">
+                            Cans for Spices
+                        </h2>
+                    </div>
+                    <div class="col-12 d-flex justify-content-center">
                         <div class="d-flex justify-content-end" style="height: 34px;" data-aos="fade-left" data-aos-delay="900" data-aos-duration="1000">
                             <button class="btn-custom btn-inquire btn-inquire_see">
                                 <div class="roundicon roundicon_see">
@@ -285,17 +301,17 @@ $logos = [
                     </div>
 
                     <div class="product-grid_home px-5 px-md-0">
-                        <div data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+                        <div onclick="window.location.href = 'category.php';" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
                             <div class="product-card_home mb-5" data-product="1">
                                 <div class="product-info_home">
-                                    <h3 class="product-title_home">Tea Cans - Round Cans / Square Cans</h3>
+                                    <h3 class="product-title_home">Tea Cans</h3>
                                 </div>
                                 <div class="imagecontent">
                                     <img class="product-image_home" src="./images/productRange/mpr01.png" alt="card">
                                 </div>
                             </div>
                         </div>
-                        <div data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
+                        <div onclick="window.location.href = 'category2.php';" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
                             <div class="product-card_home mb-5" data-product="1">
                                 <div class="product-info_home">
                                     <h3 class="product-title_home">General Cans</h3>
@@ -309,7 +325,7 @@ $logos = [
                     </div>
                     <div class="product-grid_home2 px-5 px-md-0">
                         <h2></h2>
-                        <div data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+                        <div onclick="window.location.href = 'category4.php';" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
                             <div class="product-card_home mb-5" data-product="1">
                                 <div class="product-info_home">
                                     <h3 class="product-title_home">Seeds Cans</h3>
@@ -319,7 +335,7 @@ $logos = [
                                 </div>
                             </div>
                         </div>
-                        <div data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
+                        <div onclick="window.location.href = 'category5.php';" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
                             <div class="product-card_home mb-5" data-product="1">
                                 <div class="product-info_home">
                                     <h3 class="product-title_home">Metal Closures (Crown Cork)</h3>
@@ -347,9 +363,9 @@ $logos = [
                                     <div class="line-fill"></div>
                                 </div>
                                 <p class="parcontact" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
-                                    At Unimak, sustainability is not a choice - it's our promise. <br>
-                                    Proudly made in Sri Lanka, our metal packaging solutions combine <br>
-                                    environmental responsibility with trusted quality to meet <br>
+                                    At Unimak, sustainability is not a choice - it's our promise.
+                                    Proudly made in Sri Lanka, our metal packaging solutions combine
+                                    environmental responsibility with trusted quality to meet
                                     your needs today and beyond
                                 </p>
                             </div>
@@ -370,8 +386,8 @@ $logos = [
                                 <div class="animated-line mb-3" data-aos="fade-right" data-aos-delay="300" data-aos-duration="1000">
                                     <div class="line-fill"></div>
                                 </div>
-                                <p class="parcontact" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">We do not compromise on quality. The raw material we use are of the highest grade and the output of our manufacturing plants are testimony to this work ethic. <br>
-                                    We adhere to lean manufacturing practices enabling us to transfer its benefits to our clientele by way of competitive prices. <br>
+                                <p class="parcontact" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">We do not compromise on quality. The raw material we use are of the highest grade and the output of our manufacturing plants are testimony to this work ethic. <br><br>
+                                    We adhere to lean manufacturing practices enabling us to transfer its benefits to our clientele by way of competitive prices. <br><br>
                                     The factory with an extent of 20,000 sq.ft, houses state-of-the-art machinery. Our 100 strong staff are trained by experts in the industry and are dedicated to offering the best quality in all our products with lead times as short as two weeks.</p>
 
                                 <button class="btn-custom btn-inquire btn-inquire_see" data-aos="fade-up" data-aos-delay="700" data-aos-duration="1000">
@@ -736,17 +752,17 @@ $logos = [
                 await new Promise(resolve => setTimeout(resolve, 200));
             }
 
-            tineLeftGroup.forEach((img) => {
-                img.classList.add("animate");
-            });
-            line01.forEach((img) => {
-                img.classList.add("animateFline");
-            });
-            line02.forEach((img) => {
-                img.classList.add("animateFline");
-            });
+            // tineLeftGroup.forEach((img) => {
+            //     img.classList.add("animate");
+            // });
+            // line01.forEach((img) => {
+            //     img.classList.add("animateFline");
+            // });
+            // line02.forEach((img) => {
+            //     img.classList.add("animateFline");
+            // });
 
-            await new Promise(resolve => setTimeout(resolve, 1200));
+            // await new Promise(resolve => setTimeout(resolve, 1200));
 
             line01.forEach((img) => {
                 // img.style.animation = "lineAni 3s ease-out forwards";
@@ -754,7 +770,7 @@ $logos = [
             });
             line02.forEach((img) => {
                 // img.style.animation = "lineAni 3s ease-out forwards";
-                img.classList.add("animateline");
+                img.classList.add("animateline2");
             });
         }
 
@@ -774,12 +790,12 @@ $logos = [
                 tineRight.classList.remove('animate2');
             });
             line01.forEach(tineRight => {
-                tineRight.classList.remove('animateFline');
+                // tineRight.classList.remove('animateFline');
                 tineRight.classList.remove('animateline');
             });
             line02.forEach(tineRight => {
-                tineRight.classList.remove('animateFline');
-                tineRight.classList.remove('animateline');
+                // tineRight.classList.remove('animateFline');
+                tineRight.classList.remove('animateline2');
             });
         }
 

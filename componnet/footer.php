@@ -19,7 +19,7 @@
                 <h5>Our Products</h5>
                 <ul class="footer-links ms-3">
                     <!-- <li><a href="category3.php">Innovation</a></li> -->
-                    <li><a href="category.php">Tea Cans - Round Cans / Square Cans</a></li>
+                    <li><a href="category.php">Tea Cans</a></li>
                     <li><a href="category2.php">General Cans</a></li>
                     <li><a href="category4.php">Seed Cans</a></li>
                     <li><a href="category5.php">Metal Closures (Crown Cork)</a></li>
@@ -59,9 +59,9 @@
             <p class="ps-md-2">
                 &copy; Copyright by <b>Unimak</b>
             </p>
-            <p class="visibleSm">&nbsp;|&nbsp;</p>
+            <p class="visibleSm">&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;</p>
             <p class="ps-md-2">
-                Developed By <a style="text-decoration: none; color: #333;" href="https://plover.lk/"><b>Plover.lk</b></a>
+                Developed by <a style="text-decoration: none; color: #333;" href="https://plover.lk/"><b>Plover.lk</b></a>
             </p>
         </div>
     </div>

@@ -51,26 +51,30 @@ $img = isset($_GET['img']) ? htmlspecialchars($_GET['img']) : null;
             </section>
 
             <!-- Map & Form Section -->
-            <section class="" style="margin-bottom: 100px;">
+            <section class="" style="margin-bottom: 50px;">
                 <div class="container">
                     <div class="row gy-4">
                         <!-- Google Map -->
-                        <div class="col-12 col-md-6" data-aos="fade-right" data-aos-delay="400" data-aos-duration="1000">
+                        <div class="col-12 col-md-6 order-2 order-md-1" data-aos="fade-right" data-aos-delay="400" data-aos-duration="1000">
                             <div class="rounded overflow-hidden shadow">
                                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3959.2236601978043!2d79.89873779999999!3d7.100056400000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2f1d1dde61e91%3A0x11eba1af3cbb5999!2sUnimak%20Private%20Limited!5e0!3m2!1sen!2slk!4v1751207705660!5m2!1sen!2slk" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                             </div>
                         </div>
 
                         <!-- Contact Form -->
-                        <div class="col-12 col-md-6" data-aos="fade-left" data-aos-delay="400" data-aos-duration="1000">
+                        <div class="col-12 col-md-6 order-1 order-md-2 mb-3" data-aos="fade-left" data-aos-delay="400" data-aos-duration="1000">
                             <div class="ms-0 ms-md-2">
                                 <div class="mb-3">
                                     <label for="name" class="form-label fw-bold">Full Name</label>
-                                    <input type="text" class="form-control" id="name" placeholder="Your name" required />
+                                    <input type="text" class="form-control" id="name" placeholder="Your Name" />
                                 </div>
                                 <div class="mb-3">
-                                    <label for="email" class="form-label fw-bold">Email address</label>
-                                    <input type="email" class="form-control" id="email" placeholder="name@example.com" required />
+                                    <label for="email" class="form-label fw-bold">Email Address</label>
+                                    <input type="email" class="form-control" id="email" placeholder="name@example.com" />
+                                </div>
+                                <div class="mb-3">
+                                    <label for="mobile" class="form-label fw-bold">Mobile</label>
+                                    <input type="text" class="form-control" id="mobile" placeholder="07########" required />
                                 </div>
                                 <?php if ($title && $img): ?>
                                     <div class="container mb-3" data-aos="zoom-in" data-aos-delay="200">
@@ -91,9 +95,15 @@ $img = isset($_GET['img']) ? htmlspecialchars($_GET['img']) : null;
                                 <?php endif; ?>
                                 <div class="mb-3">
                                     <label for="message" class="form-label fw-bold">Message</label>
-                                    <textarea class="form-control" id="message" rows="5" placeholder="Your message..." required></textarea>
+                                    <textarea class="form-control" id="message" rows="5" placeholder="Your message..."></textarea>
                                 </div>
-                                <button type="submit" class="btn btn-dark px-4">Send Message</button>
+                                <!-- <button type="submit" class="btn btn-dark px-4">Send Message</button> -->
+                                <button onclick="window.location.href = 'contact.php?title=<?php echo urlencode($product['title']); ?>&img=<?php echo urlencode($product['image']); ?>';" class="btn-custom btn-inquire">
+                                    <div class="roundicon">
+                                        <i class="fa-solid fa-arrow-up-long"></i>
+                                    </div>
+                                    <span>Send Message</span>
+                                </button>
                             </div>
                         </div>
                     </div>

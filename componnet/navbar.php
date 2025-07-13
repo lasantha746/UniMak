@@ -12,7 +12,7 @@
                         <!-- <a class="nav-item dropdown-toggle" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">Our Products</a> -->
                         <a href="#">Our Products <span class="arrow">&#9662;</span></a>
                         <ul class="dropdown-menu topsubmenu">
-                            <li><a class="me-4" onclick="window.location.href = 'category.php';">Tea Cans - Round Cans / Square Cans </a></li>
+                            <li><a class="me-4" onclick="window.location.href = 'category.php';">Tea Cans</a></li>
                             <li><a class="me-4" onclick="window.location.href = 'category2.php';">General Cans</a></li>
                             <!-- <li><a onclick="window.location.href = 'category3.php';">Innovational Can</a></li> -->
                             <li><a class="me-4" onclick="window.location.href = 'category4.php';">Seeds Can</a></li>
@@ -41,7 +41,7 @@
             <li class="nav-item dropdown">
                 <a class="nav-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Our Products</a>
                 <ul class="sidesubmenu dropdown-menu">
-                    <li><a href="category.php">Tea Cans - Round Cans/Square Cans</a></li>
+                    <li><a href="category.php">Tea Cans</a></li>
                     <li><a href="category2.php">General Cans</a></li>
                     <!-- <li><a href="category3.php">Innovational Can</a></li> -->
                     <li><a href="category4.php">Seeds Can</a></li>
