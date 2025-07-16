@@ -53,7 +53,7 @@ $products = [
             </section>
 
             <!-- Products Section -->
-            <section class="container" id="products" style="margin-bottom: 100px;">
+            <section class="container" id="products" style="padding-bottom: 100px;">
                 <div class="section-title2">
                     <div class="section-title">
                         <h2>Cans for Spices</h2>

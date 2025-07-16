@@ -81,7 +81,7 @@ $logos = [
 
     <!-- Page Loader -->
     <?php
-    include('componnet/loading2.php');
+    include('componnet/loading.php');
     ?>
 
 
@@ -378,7 +378,7 @@ $logos = [
                 </div>
             </section>
 
-            <section class="why-choose-us pb-4">
+            <section class="why-choose-us pb-4" id="why">
                 <div class="container ps-3 ps-md-5">
                     <div class="row">
                         <div class="col-12 col-md-6">
@@ -391,7 +391,7 @@ $logos = [
                                     We adhere to lean manufacturing practices enabling us to transfer its benefits to our clientele by way of competitive prices. <br><br>
                                     The factory with an extent of 20,000 sq.ft, houses state-of-the-art machinery. Our 100 strong staff are trained by experts in the industry and are dedicated to offering the best quality in all our products with lead times as short as two weeks.</p>
 
-                                <button class="btn-custom btn-inquire btn-inquire_see" data-aos="fade-up" data-aos-delay="700" data-aos-duration="1000">
+                                <button onclick="window.location.href = 'about.php';" class="btn-custom btn-inquire btn-inquire_see" data-aos="fade-up" data-aos-delay="700" data-aos-duration="1000">
                                     <div class="roundicon roundicon_see">
                                         <i class="fa-solid fa-arrow-up-long"></i>
                                     </div>
@@ -586,7 +586,7 @@ $logos = [
             });
 
             // Create a promise that resolves after 5 seconds
-            const minimumWait = new Promise((resolve) => setTimeout(resolve, 5000));
+            const minimumWait = new Promise((resolve) => setTimeout(resolve, 1000));
 
             // Wait for both
             Promise.all([imagesLoadedPromise, minimumWait]).then(callback);
@@ -600,7 +600,7 @@ $logos = [
                     loader.style.opacity = "0";
                     setTimeout(() => {
                         loader.style.display = "none";
-                    }, 600);
+                    }, 2000);
                 }
 
                 //setupSoundToggle();
@@ -892,6 +892,7 @@ $logos = [
             }
         });
     </script>
+
 </body>
 
 </html>

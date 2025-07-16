@@ -12,6 +12,12 @@ $products = [
         "description" => "250g & 400g D21Tea Can",
         "image" => "./images/category/cat04.jpg"
     ],
+        [
+        "id" => "14",
+        "title" => "211Ø Printed Round Can with Flush Lid",
+        "description" => "50g Printed Tea & Spice Can / 100g Printed Tea & Spice Can",
+        "image" => "./images/category/cat14.jpg"
+    ],
 ];
 $products2 = [
     [
@@ -74,7 +80,7 @@ $products2 = [
 
 
             <!-- Products Section -->
-            <section class="container" id="products" style="margin-bottom: 50px;">
+            <section class="container" id="products" style="padding-bottom: 50px;">
                 <div class="section-title2">
                     <div class="section-title">
                         <h2>Square Cans</h2>
@@ -109,7 +115,7 @@ $products2 = [
             </section>
 
             <!-- Products Section -->
-            <section class="container" id="products" style="margin-bottom: 100px;">
+            <section class="container" id="products" style="padding-bottom: 100px;">
                 <div class="section-title2">
                     <div class="section-title">
                         <h2>Round Cans</h2>

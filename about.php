@@ -36,7 +36,7 @@
                         <div class="col-12 col-md-12 mb-3 mb-lg-0">
                             <div class="section-title">
                                 <h2 class="mb-3" data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000">
-                                    Seetha Metal Can Industries (Pvt) Limited
+                                    Our Story
                                 </h2>
                                 <div class="animated-line mb-3" data-aos="fade-right" data-aos-delay="300" data-aos-duration="1000">
                                     <div class="line-fill"></div>
@@ -71,12 +71,12 @@
                     <div class="row">
                         <div class="col-12 col-md-12 mb-3 mb-lg-0">
                             <div class="section-title">
-                                <h2 class="mb-3" data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000">
+                                <!-- <h2 class="mb-3" data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000">
                                     Unimak (Pvt) Limited
                                 </h2>
                                 <div class="animated-line mb-3" data-aos="fade-right" data-aos-delay="300" data-aos-duration="1000">
                                     <div class="line-fill"></div>
-                                </div>
+                                </div> -->
                                 <div class="row">
                                     <div class="col-12 col-md-5">
                                         <p class="parcontact" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">

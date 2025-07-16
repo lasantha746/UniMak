@@ -17,9 +17,10 @@
                             <!-- <li><a onclick="window.location.href = 'category3.php';">Innovational Can</a></li> -->
                             <li><a class="me-4" onclick="window.location.href = 'category4.php';">Seeds Can</a></li>
                             <li><a class="me-4" onclick="window.location.href = 'category5.php';">Metal Closures (Crown Cork)</a></li>
+                            <li><a class="me-4" onclick="window.location.href = 'category3.php';">Cans for Spices</a></li>
                         </ul>
                     </li>
-                    <li><a href="category3.php">Cans for Spices</a></li>
+                    <!-- <li><a href="#why">Why Choose us</a></li> -->
                     <li><a href="contact.php">Contact Us</a></li>
                 </ul>
             </div>
@@ -46,9 +47,10 @@
                     <!-- <li><a href="category3.php">Innovational Can</a></li> -->
                     <li><a href="category4.php">Seeds Can</a></li>
                     <li><a href="category5.php">Metal Closures(Crown Cork)</a></li>
+                    <li><a href="category3.php">Cans for Spices</a></li>
                 </ul>
             </li>
-            <li><a href="category3.php">Cans for Spices</a></li>
+            <!-- <li><a href="whyus.php">Why Choose us</a></li> -->
             <li><a href="contact.php">Contact Us</a></li>
         </ul>
     </div>

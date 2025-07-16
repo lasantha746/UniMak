@@ -33,7 +33,7 @@
                             <i class="fas fa-map-marker-alt"></i>
                         </div>
                         <div class="Ftext">
-                            <p>Seetha Group, No 2P 10A/10B,<br> Industrial Estate, Ekala,<br> Ja ela, Sri Lanka.</p>
+                            <p>No 2P 10A/10B,<br> Industrial Estate, Ekala,<br> Ja ela, Sri Lanka.</p>
                         </div>
                     </div>
                     <div class="d-flex align-items-start justify-content-start mb-3">
@@ -49,7 +49,7 @@
                             <i class="fas fa-envelope"></i>
                         </div>
                         <div class="Ftext">
-                            <p>info@unimak.lk <br> seethacan@sltnet.lk</p>
+                            <p>info@unimak.lk </p>
                         </div>
                     </div>
                 </div>
