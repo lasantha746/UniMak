@@ -1,46 +1,86 @@
 <?php
 $products = [
+
     [
-        "id" => "07",
-        "title" => "700Ø Round Can with Leaver Lid",
-        "description" => "05 Ltr Plain Can / 05 Ltr Printed Can",
-        "image" => "./images/category/cat07.jpg"
+        "id" => "N01",
+        "title" => "213Ø Round Can with Leaver Lid",
+        "description" => "150ml & 200ml",
+        "image" => "./images/category/ncat01.jpg"
     ],
     [
-        "id" => "08",
-        "title" => "700Ø Round Can with Leaver Lid",
-        "description" => "04 Ltr Plain Can / 04 Ltr Printed Can",
-        "image" => "./images/category/cat08.jpg"
+        "id" => "N02",
+        "title" => "300Ø Round Can with Leaver Lid",
+        "description" => "200ml / 250ml",
+        "image" => "./images/category/ncat02.jpg"
     ],
     [
-        "id" => "09",
-        "title" => "700Ø Round Can with Leaver Lid",
-        "description" => "02 Kg Plain Can / 02 Kg Printed Can",
-        "image" => "./images/category/cat09.jpg"
+        "id" => "N03",
+        "title" => "404Ø Printed Can with Leaver Lid",
+        "description" => "250ml / 400ml / 500ml",
+        "image" => "./images/category/ncat03.jpg"
     ],
+
     [
-        "id" => "10",
-        "title" => "700Ø Round Can with Leaver Lid",
-        "description" => "1.5 Kg Plain Can / 1.5 Kg Printed Can",
-        "image" => "./images/category/cat10.jpg"
+        "id" => "12",
+        "title" => "404Ø Round Can with Leaver Lid",
+        "description" => "01 kg / 01 Ltr",
+        "image" => "./images/category/cat12.jpg"
     ],
     [
         "id" => "11",
         "title" => "509Ø Round Can with Leaver Lid",
-        "description" => "800 g Plain Can / 800 g Printed Can",
+        "description" => "800g",
         "image" => "./images/category/cat11.jpg"
     ],
     [
-        "id" => "12",
-        "title" => "404Ø Round Can with Leaver Lid",
-        "description" => "01 Ltr Plain Can / 01 Ltr Printed Can",
-        "image" => "./images/category/cat12.jpg"
+        "id" => "N04",
+        "title" => "603Ø Round Can with Leaver Lid",
+        "description" => "2Kg / 4kg / 3 Ltr",
+        "image" => "./images/category/ncat04.jpg"
+    ],
+
+    [
+        "id" => "10",
+        "title" => "700Ø Round Can with Leaver Lid",
+        "description" => "800g / 1.5Kg",
+        "image" => "./images/category/cat10.jpg"
+    ],
+
+    [
+        "id" => "09",
+        "title" => "700Ø Round Can with Leaver Lid",
+        "description" => "2Kg",
+        "image" => "./images/category/cat09.jpg"
     ],
     [
+        "id" => "08",
+        "title" => "700Ø Round Can with Leaver Lid",
+        "description" => "4 Ltr",
+        "image" => "./images/category/cat08.jpg"
+    ],
+    [
+        "id" => "07",
+        "title" => "700Ø Round Can with Leaver Lid",
+        "description" => "5 Ltr",
+        "image" => "./images/category/cat07.jpg"
+    ],
+
+
+];
+
+
+$products2 = [
+    [
         "id" => "13",
-        "title" => "300Ø Printed Round Can with Spout / 404Ø Printed Can with Spout",
-        "description" => "250 ml Printed Can / 500 ml Printed Can / 01 Ltr Printed Can",
+        "title" => "300Ø Printed Round Can with Spout",
+        "description" => "250ml / 500ml",
         "image" => "./images/category/cat13.jpg"
+    ],
+            [
+        "id" => "N05",
+        "title" => "404Ø Printed Can with Spout",
+        "description" => "1 Ltr",
+        "image" => "./images/category/ncat05.jpg"
     ],
 ];
 ?>
@@ -60,6 +100,8 @@ $products = [
     <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Squada+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="src/css/style.css">
 </head>
 
@@ -80,7 +122,7 @@ $products = [
             <section class="container" id="products" style="padding-bottom: 100px;">
                 <div class="section-title2">
                     <div class="section-title">
-                        <h2>General Cans</h2>
+                        <h2 class="titleFont">General Cans</h2>
                         <div class="animated-line">
                             <div class="line-fill"></div>
                         </div>
@@ -110,6 +152,41 @@ $products = [
                 </div>
             </section>
 
+
+                  <!-- Products Section -->
+            <section class="container" id="products" style="padding-bottom: 100px;">
+                <div class="section-title2">
+                    <div class="section-title">
+                        <h2 class="titleFont">Spout Cans</h2>
+                        <div class="animated-line">
+                            <div class="line-fill"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-grid">
+                    <?php foreach ($products2 as $product): ?>
+                        <div data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+                            <div class="product-card" data-product="1">
+                                <img class="product-image" src="<?php echo $product['image']; ?>" alt="card">
+                                <div class="product-info">
+                                    <h3 class="product-title"><?php echo $product['title']; ?></h3>
+                                    <div class="button-group">
+                                        <button class="btn-custom btn-see-more inquire_see" onclick="openModal('<?php echo $product['id']; ?>')"><span>See More</span></button>
+                                        <button onclick="window.location.href = 'contact.php?title=<?php echo urlencode($product['title']); ?>&img=<?php echo urlencode($product['image']); ?>';" class="btn-custom btn-inquire">
+                                            <div class="roundicon">
+                                                <i class="fa-solid fa-arrow-up-long"></i>
+                                            </div>
+                                            <span>Inquire Now</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    <?php endforeach; ?>
+                    <div></div>
+                </div>
+            </section>
             <!-- Footer -->
             <?php include('componnet/footer.php'); ?>
 
@@ -117,6 +194,33 @@ $products = [
     </div>
 
     <?php foreach ($products as $product): ?>
+        <!-- Modal -->
+        <div class="modal-overlay" id="modalOverlay_<?php echo $product['id']; ?>">
+            <div class="modal-content">
+                <button class="modal-close" onclick="closeModal('<?php echo $product['id']; ?>')">&times;</button>
+                <div class="modal-content2">
+                    <div class="modal-image" id="modalImage">
+                        <img class="modal-image" src="<?php echo $product['image']; ?>" alt="Modal Image">
+                    </div>
+                    <h3 id="modalTitle"><?php echo $product['title']; ?></h3>
+                    <p id="modalDescription">
+                        <?php echo $product['description']; ?>
+                    </p>
+                    <!-- <div class="mt-4">
+                        <h5>Specifications:</h5>
+                        <ul>
+                            <li>Size: 309 x 309</li>
+                            <li>Material: High-grade metal</li>
+                            <li>Available with or without tagger</li>
+                            <li>Food-safe coating</li>
+                            <li>Customizable design options</li>
+                        </ul>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    <?php endforeach; ?>
+    <?php foreach ($products2 as $product): ?>
         <!-- Modal -->
         <div class="modal-overlay" id="modalOverlay_<?php echo $product['id']; ?>">
             <div class="modal-content">

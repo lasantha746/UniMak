@@ -1,12 +1,6 @@
 <?php
 $products = [
     [
-        "id" => "14",
-        "title" => "211Ø Printed Round Can with Flush Lid",
-        "description" => "50g Printed Tea & Spice Can / 100g Printed Tea & Spice Can",
-        "image" => "./images/category/cat14.jpg"
-    ],
-    [
         "id" => "15",
         "title" => "202Ø Printed Round Can with Slip On Lid",
         "description" => "50g Printed Tea & Spice Can / 100g Printed Tea & Spice Can",
@@ -17,6 +11,12 @@ $products = [
         "title" => "211Ø Plain Round Can with Flush Lid",
         "description" => "50g Plain Tea & Spice Can / 100g Plain Tea & Spice Can",
         "image" => "./images/category/cat16.jpg"
+    ],
+    [
+        "id" => "14",
+        "title" => "211Ø Printed Round Can with Flush Lid",
+        "description" => "50g Printed Tea & Spice Can / 100g Printed Tea & Spice Can",
+        "image" => "./images/category/cat14.jpg"
     ],
 ];
 ?>
@@ -36,6 +36,8 @@ $products = [
     <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Squada+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="src/css/style.css">
 </head>
 
@@ -56,7 +58,7 @@ $products = [
             <section class="container" id="products" style="padding-bottom: 100px;">
                 <div class="section-title2">
                     <div class="section-title">
-                        <h2>Cans for Spices</h2>
+                        <h2 class="titleFont">Cans for Spices</h2>
                         <div class="animated-line">
                             <div class="line-fill"></div>
                         </div>

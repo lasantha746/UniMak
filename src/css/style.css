@@ -5,10 +5,33 @@
         }
 
         body {
-            font-family: "Barlow", sans-serif;
+            font-family: 'Nunito Sans', sans-serif;
             background-color: #ffffff;
             overflow-x: hidden !important;
         }
+
+        .titleFont {
+            font-family: 'Squada One', cursive !important;
+        }
+
+        .bg_baner {
+            background-color: #c7d8ea;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            margin: 2rem;
+            border-radius: 17px;
+        }
+
+        .bg_baner h1 {
+            color: #FFF;
+            font-weight: bolder;
+            font-size: 3rem;
+            text-align: center;
+            letter-spacing: 6px;
+        }
+
         section {
             overflow: hidden !important;
         }
@@ -521,6 +544,10 @@
             padding-bottom: 4px;
             padding-right: 15px;
         }
+        .span_cus {
+            padding-left: 10px !important;
+            padding-right: 10px !important;
+        }
 
         .btn-inquire::before {
             content: '';
@@ -1025,6 +1052,10 @@
                 width: calc(100% - 1rem);
             }
 
+            .bg_baner {
+                margin: 0.5rem;
+            }
+
             .see_btn {
                 width: calc(100% - 2rem);
             }
@@ -1155,6 +1186,10 @@
 
             .footerCop p {
                 font-size: 10px;
+            }
+
+            .bg_baner h1 {
+                font-size: 2rem;
             }
         }
 
@@ -1496,6 +1531,7 @@
         .animateline {
             animation: lineAni 7s ease-out forwards;
         }
+
         .animateline2 {
             animation: lineAni 3s ease-out forwards;
         }

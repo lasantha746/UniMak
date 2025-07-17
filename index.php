@@ -74,6 +74,8 @@ $logos = [
     <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Squada+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="src/css/style.css">
 </head>
 
@@ -104,17 +106,21 @@ $logos = [
                     <!-- Slide 04 -->
                     <div class="slide active" id="slide04">
                         <div class="container_ani" onload="">
-                            <img src="images/Slider/04/9.png" class="layer2 ice" style="top: 0; z-index: 1" />
+                            <img src="images/Slider/04/1.jpg" class="layer2 ice" style="top: 0; z-index: 1" />
 
+                            <img src="images/Slider/04/2.png" class="layer2 tineCan" style="top: 0; z-index: 5" />
+                            <img src="images/Slider/04/3.png" class="layer2 tineCan" style="top: 0; z-index: 4" />
+                            <img src="images/Slider/04/4.png" class="layer2 tineCan" style="top: 0; z-index: 3" />
+                            <img src="images/Slider/04/5.png" class="layer2 tineCan" style="top: 0; z-index: 2" />
+                            <img src="images/Slider/04/6.png" class="layer2 tineCan" style="top: 0; z-index: 8" />
+                            <img src="images/Slider/04/7.png" class="layer2 tineCan" style="top: 0; z-index: 6" />
                             <img src="images/Slider/04/8.png" class="layer2 tineCan" style="top: 0; z-index: 7" />
-                            <img src="images/Slider/04/7.png" class="layer2 tineCan" style="top: 0; z-index: 2" />
-                            <img src="images/Slider/04/6.png" class="layer2 tineCan" style="top: 0; z-index: 3" />
-                            <img src="images/Slider/04/5.png" class="layer2 tineCan" style="top: 0; z-index: 4" />
-                            <img src="images/Slider/04/4.png" class="layer2 tineCan" style="top: 0; z-index: 5" />
-                            <img src="images/Slider/04/3.png" class="layer2 tineCan" style="top: 0; z-index: 6" />
-                            <img src="images/Slider/04/2.png" class="layer2 ice" style="top: 0; z-index: 8" />
-                            <img src="images/Slider/04/1a.png" class="layer2 smoke smoke1" style="top: 0; z-index: 9" />
-                            <img src="images/Slider/04/1b.png" class="layer2 smoke smoke2" style="top: 0; z-index: 10" />
+                            <img src="images/Slider/04/9.png" class="layer2 tineCan" style="top: 0; z-index: 10" />
+                            <img src="images/Slider/04/10.png" class="layer2 tineCan" style="top: 0; z-index: 11" />
+                            <img src="images/Slider/04/11.png" class="layer2 tineCan" style="top: 0; z-index: 9" />
+                            <img src="images/Slider/04/20.png" class="layer2 ice" style="top: 0; z-index: 12" />
+                            <img src="images/Slider/04/21.png" class="layer2 smoke smoke1" style="top: 0; z-index: 13" />
+                            <img src="images/Slider/04/22.png" class="layer2 smoke smoke2" style="top: 0; z-index: 14" />
                         </div>
                         <audio id="tineSound" src="images/Slider/music/s3.mp3" preload="auto"></audio>
                     </div>
@@ -173,8 +179,8 @@ $logos = [
                             <img src="images/Slider/01/2f.png" class="layer tonic" style="top: 0; z-index: 16" />
                             <img src="images/Slider/01/2e.png" class="layer tonic" style="top: 0; z-index: 17" />
                             <img src="images/Slider/01/2l.png" class="layer tonic" style="top: 0; z-index: 12" />
-                            <img src="images/Slider/01/2d.png" class="layer tonic" style="top: 0; z-index: 18" />
-                            <img src="images/Slider/01/2c.png" class="layer tonic" style="top: 0; z-index: 19" />
+                            <img src="images/Slider/01/2dd.png" class="layer tonic" style="top: 0; z-index: 18" />
+                            <img src="images/Slider/01/2cc.png" class="layer tonic" style="top: 0; z-index: 19" />
                             <img src="images/Slider/01/2b.png" class="layer tonic" style="top: 0; z-index: 20" />
                             <img src="images/Slider/01/2a.png" class="layer tonic" style="top: 0; z-index: 21" />
 
@@ -221,7 +227,7 @@ $logos = [
             <section class="container px-0 px-sm-3 px-md-5">
                 <div class="mt-0 mt-md-5 px-0 px-sm-3 px-md-5">
                     <div class="section-title d-flex flex-column align-items-center text-center" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
-                        <h2>State of the art Manufacturing Plant with
+                        <h2 class="titleFont">State of the art Manufacturing Plant with
                             Impressive Production Capacity</h2>
                         <div class="animated-line" data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000">
                             <div class="line-fill"></div>
@@ -251,12 +257,18 @@ $logos = [
                 </div>
             </section>
 
+            <section>
+                <div class="bg_baner pt-3 pb-3 pt-md-5 pb-md-5">
+                    <h1 class="titleFont pt-2 pb-0 pt-md-4 pb-md-2">UNLEASH THE POWER OF PACKAGING</h1>
+                </div>
+            </section>
+
             <section class="subIMG-section d-flex flex-column align-items-center" id="home">
-                <img class="mt-0 mt-md-5" src="./images/homesubbg.png" alt="Hero Image">
-                <img class="mt-4 mt-md-5 subIMG" src="./images/homesub.png" alt="Hero Image" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
+                <img class="" src="./images/homesubbg.png" alt="Hero Image">
+                <img class="subIMG" src="./images/homesub.png" alt="Hero Image" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
                 <div class="d-none d-md-block row d-flex flex-column align-items-center see_btn">
                     <div class="col-12 d-flex justify-content-end text-end">
-                        <h2 data-aos="fade-left" data-aos-delay="700" data-aos-duration="1000">
+                        <h2 class="titleFont" data-aos="fade-left" data-aos-delay="700" data-aos-duration="1000">
                             Cans for Spices
                         </h2>
                     </div>
@@ -273,7 +285,7 @@ $logos = [
                 </div>
                 <div class="d-block d-md-none row d-flex flex-column align-items-center mt-5" style="z-index: 10;">
                     <div class="col-12 d-flex justify-content-center text-center mt-3">
-                        <h2 data-aos="fade-left" data-aos-delay="700" data-aos-duration="1000">
+                        <h2 class="titleFont" data-aos="fade-left" data-aos-delay="700" data-aos-duration="1000">
                             Cans for Spices
                         </h2>
                     </div>
@@ -294,7 +306,7 @@ $logos = [
                 <div class="container px-0 px-sm-3 px-md-5">
                     <div class="section-title2">
                         <div class="section-title">
-                            <h2>Main Product Range</h2>
+                            <h2 class="titleFont">Main Product Range</h2>
                             <div class="animated-line">
                                 <div class="line-fill"></div>
                             </div>
@@ -356,7 +368,7 @@ $logos = [
                     <div class="row">
                         <div class="col-12 col-md-6 mb-4 mb-lg-0 mt-0 mt-md-0 mt-lg-5 pt-0 pt-lg-5">
                             <div class="section-title">
-                                <h2 class="mb-3" data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000">
+                                <h2 class="mb-3 titleFont" data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000">
                                     Think Sustainable. <br>
                                     Choose Unimak.
                                 </h2>
@@ -383,7 +395,7 @@ $logos = [
                     <div class="row">
                         <div class="col-12 col-md-6">
                             <div class="section-title">
-                                <h2 class="mb-3" data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000">Why Choose Us</h2>
+                                <h2 class="mb-3 titleFont" data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000">Why Choose Us</h2>
                                 <div class="animated-line mb-3" data-aos="fade-right" data-aos-delay="300" data-aos-duration="1000">
                                     <div class="line-fill"></div>
                                 </div>
@@ -416,7 +428,7 @@ $logos = [
                     <div class="row">
                         <div class="col-12 col-md-8 mb-lg-0">
                             <div class="section-title" style="margin-bottom: 5px;">
-                                <h2 class="mb-3" data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000">Our Clients</h2>
+                                <h2 class="mb-3 titleFont" data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000">Our Clients</h2>
                                 <div class="animated-line" data-aos="fade-right" data-aos-delay="300" data-aos-duration="1000">
                                     <div class="line-fill"></div>
                                 </div>

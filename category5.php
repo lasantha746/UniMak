@@ -32,6 +32,8 @@ $products = [
     <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Squada+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="src/css/style.css">
 </head>
 
@@ -52,7 +54,7 @@ $products = [
             <section class="container" id="products" style="padding-bottom: 100px;">
                 <div class="section-title2">
                     <div class="section-title">
-                        <h2>Metal Closures (Crown Cork)</h2>
+                        <h2 class="titleFont">Metal Closures (Crown Cork)</h2>
                         <div class="animated-line">
                             <div class="line-fill"></div>
                         </div>

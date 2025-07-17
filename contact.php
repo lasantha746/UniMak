@@ -18,6 +18,8 @@ $img = isset($_GET['img']) ? htmlspecialchars($_GET['img']) : null;
     <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Squada+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="src/css/style.css">
 </head>
 
@@ -39,7 +41,7 @@ $img = isset($_GET['img']) ? htmlspecialchars($_GET['img']) : null;
             <section class="mt-5 pt-5 mb-0 mb-md-5">
                 <div class="container">
                     <div class="section-title text-center">
-                        <h2 class="mb-3" data-aos="fade-down" data-aos-delay="100" data-aos-duration="1000">Contact Us</h2>
+                        <h2 class="mb-3 titleFont" data-aos="fade-down" data-aos-delay="100" data-aos-duration="1000">Contact Us</h2>
                         <div class="animated-line mb-4 mx-auto" data-aos="fade-down" data-aos-delay="200" data-aos-duration="1000">
                             <div class="line-fill"></div>
                         </div>
@@ -102,7 +104,7 @@ $img = isset($_GET['img']) ? htmlspecialchars($_GET['img']) : null;
                                     <div class="roundicon">
                                         <i class="fa-solid fa-arrow-up-long"></i>
                                     </div>
-                                    <span>Send Message</span>
+                                    <span class="span_cus">Send Message</span>
                                 </button>
                             </div>
                         </div>
