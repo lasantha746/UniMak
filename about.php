@@ -13,7 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Squada+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="src/css/style.css">
 </head>
@@ -46,16 +46,8 @@
                                 <div class="row">
                                     <div class="col-12 col-md-5">
                                         <p class="parcontact" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
-                                            Our story in the metal packaging industry began in 1990
-                                            with Seetha Metal Can, a name that earned trust
-                                            through quality and dedication. In 2011, as we evolved
-                                            and expanded, Unimak was born—carrying forward the
-                                            legacy after Seetha Metal closed its doors. Though the
-                                            name has changed, our commitment has never wavered.
-                                            With over 30 years of experience behind us,
-                                            Unimak stands today as a reflection of our enduring
-                                            passion for innovation, craftsmanship, and excellence
-                                            in metal packaging.
+                                            Our journey in the metal packaging industry began in 1990 with Seetha Metal Can Industries Private Limited, a brand built on trust, quality, and dedication. Over the years, we earned a reputation for excellence and innovation. In 2011, Seetha Metal Can was replaced by Unimak, marking a new chapter in our evolution. The entire business rebranded under the Unimak name, continuing our legacy of superior craftsmanship and service. <br><br>
+                                            With over 35 years of experience, Unimak Private Limited now stands as a leader in the industry, offering a comprehensive range of packaging solutions—from crown corks to tea caddies and general cans. Our focus is on delivering convenience, versatility, and exceptional quality, providing clients with a seamless, all-in-one packaging experience.
                                         </p>
                                     </div>
                                     <div class="col-12 col-md-7">
@@ -82,19 +74,7 @@
                                 <div class="row">
                                     <div class="col-12 col-md-5">
                                         <p class="parcontact" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
-                                            In 2011, Seetha Metal Can Industries expanded its vision by launching
-                                            UNIMAK (Pvt) Limited—a dynamic subsidiary created to enhance the
-                                            existing product portfolio and deliver a truly 360° packaging solution
-                                            under one trusted name. From crown corks to tea caddies and biscuit
-                                            cans, UNIMAK brings versatility, convenience, and quality together—
-                                            offering clients a seamless, one-stop-shop experience. <br><br>
-                                            Driven by advanced technology, continuous innovation, and lean manufacturing
-                                            principles, both Seetha and UNIMAK remain at the forefront
-                                            of the industry. But it's not just about products - it's about
-                                            people. Our dedication to genuine, dependable service fuels lasting
-                                            partnerships and a growing global clientele. <br><br>
-                                            Together, we don’t just meet demand-we redefine what's possible in
-                                            metal packaging.
+                                            Driven by advanced technology, lean manufacturing principles, and a passion for continuous improvement, we remain at the forefront of innovation. Our strength lies not only in our products but also in our dedicated team and commitment to dependable service. We don’t just meet the market's needs — we push the boundaries of what’s possible in metal packaging, building lasting partnerships and shaping the future of the industry
                                         </p>
                                     </div>
                                     <div class="col-12 col-md-7">
@@ -121,24 +101,21 @@
                                 <div class="row">
                                     <div class="col-12 col-md-6">
                                         <p class="parcontact" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
-                                            At both our parent company and its subsidiary, we take immense
-                                            pride in our dedicated teams who consistently deliver service that
-                                            goes beyond expectations. Their excellence is not by chance — it's a
-                                            reflection of the service-driven mindset and culture we live by every
-                                            single day.
+                                            At Unimak, we take immense pride in our dedicated teams who consistently deliver service that goes beyond expectations. Their excellence is not by chance — it's a reflection of the service-driven mindset and culture we live by every single day.
                                         </p>
 
                                         <div class="row d-flex justify-content-center justify-content-md-end">
                                             <div class="vision-card me-0 me-md-3" data-aos="fade-right" data-aos-delay="500" data-aos-duration="1000">
                                                 <h5>Mission,</h5>
                                                 <p>
-                                                    To provide our valued <br>
-                                                    clientele with superior,<br>
-                                                    defect-free products<br>
-                                                    delivered swiftly and<br>
-                                                    competitively, powered<br>
-                                                    by innovation and cutting-<br>
-                                                    edge technology<br>
+                                                    To deliver superior-quality, <br> 
+                                                    cost-effective, and  <br>
+                                                    eco-conscious packaging  <br>
+                                                    solutions through
+                                                </p>
+                                                <p class="vision-subtext">
+                                                    continuous innovation, customer <br>
+                                                    focus, and operational excellence.
                                                 </p>
                                             </div>
 
@@ -148,12 +125,14 @@
                                         <div class="vision-card mt-3" data-aos="fade-left" data-aos-delay="500" data-aos-duration="1000">
                                             <h5>Vision,</h5>
                                             <p>
-                                                To be the leader in <br> metal printing and <br>
-                                                packaging – locally and <br> globally.
-                                            </p>
-                                            <p class="vision-subtext">
-                                                But we don't just aspire to this;<br>
-                                                we pursue it relentlessly.
+                                                To be the most trusted <br>
+                                                and innovative provider <br>
+                                                of sustainable metal<br>
+                                                packaging in Sri Lanka<br>
+                                                and to build a strong,<br>
+                                                export-ready brand <br>
+                                                recognized regionally <br>
+                                                and globally.
                                             </p>
                                         </div>
 

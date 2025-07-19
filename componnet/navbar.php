@@ -20,7 +20,7 @@
                             <li><a class="me-4" onclick="window.location.href = 'category3.php';">Cans for Spices</a></li>
                         </ul>
                     </li>
-                    <!-- <li><a href="#why">Why Choose us</a></li> -->
+                    <li><a href="why.php">Why Choose us</a></li>
                     <li><a href="contact.php">Contact Us</a></li>
                 </ul>
             </div>
@@ -30,8 +30,10 @@
             </button>
         </div>
     </nav>
+  
     <!-- Side Navigation -->
     <div class="side-nav-overlay" id="sideNavOverlay"></div>
+   
     <div class="side-nav" id="sideNav">
         <button class="side-nav-close" id="sideNavClose">
             <i class="fas fa-times"></i>
@@ -50,17 +52,13 @@
                     <li><a href="category3.php">Cans for Spices</a></li>
                 </ul>
             </li>
-            <!-- <li><a href="whyus.php">Why Choose us</a></li> -->
+            <li><a href="why.php">Why Choose us</a></li>
             <li><a href="contact.php">Contact Us</a></li>
         </ul>
     </div>
 
-
-
     <!-- Scroll to Top Button -->
     <button onclick="scrollToTop()" id="scrollBtn" title="Go to top"> <i class="fas fa-arrow-up"></i></button>
-
-
 
     <script>
         document.addEventListener("DOMContentLoaded", function() {
@@ -109,7 +107,6 @@
         });
     </script>
 
-
     <script>
         // Show button when scroll down
         window.onscroll = function() {
@@ -123,7 +120,6 @@
                 scrollBtn.style.display = "none";
             }
         };
-
 
         // Smooth scroll to top
         function scrollToTop() {

@@ -1,48 +1,73 @@
 <?php
 $products = [
     [
+        "id" => "14",
+        "title" => "211Ø Printed Round Can with Flush Lid",
+        "description" => "211Ø Printed Round Can with Flush Lid",
+        "image" => "./images/category/cat14.jpg"
+    ],
+    [
+        "id" => "N06",
+        "title" => "307Ø Round Can with Wire Shackle & Plastic Lid",
+        "description" => "307Ø Round Can with Wire Shackle & Plastic Lid",
+        "image" => "./images/category/ncat06.jpg"
+    ],
+    [
         "id" => "03",
-        "title" => "307Ø & 406Ø Round Can with Wire Shacle & Plastic Lid",
-        "description" => "200g & 300g Tea Can",
+        "title" => "406Ø Round Can with Wire Shackle & Plastic Lid",
+        "description" => "406Ø Round Can with Wire Shackle & Plastic Lid",
         "image" => "./images/category/cat03.jpg"
     ],
     [
         "id" => "04",
-        "title" => "509Ø Round Can with Leaver Lid & Tagger",
-        "description" => "250g & 400g D21Tea Can",
+        "title" => "509Ø Round Can with Lever Lid & Tagger",
+        "description" => "509Ø Round Can with Lever Lid & Tagger",
         "image" => "./images/category/cat04.jpg"
     ],
-        [
-        "id" => "14",
-        "title" => "211Ø Printed Round Can with Flush Lid",
-        "description" => "50g Printed Tea & Spice Can / 100g Printed Tea & Spice Can",
-        "image" => "./images/category/cat14.jpg"
-    ],
+
 ];
 $products2 = [
     [
         "id" => "01",
-        "title" => "301x301 Plain Slip on Lid Can & 309x309 Printed Leaver Lid Can with Tagger",
-        "description" => "100g / 175g / 225g / 250g / 290g Tea Cans",
+        "title" => "301x301 Plain Slip on Lid Can",
+        "description" => "301x301 Plain Slip on Lid Can",
         "image" => "./images/category/cat01.jpg"
     ],
     [
         "id" => "02",
-        "title" => "5 Lb & 10 Lb Square Can with Leaver Lid",
-        "description" => "1Kg to 5 Kg Tea Can",
+        "title" => "309x309 Printed Can with Square Lever Lid & Tagger",
+        "description" => "309x309 Printed Can with Square Lever Lid & Tagger",
         "image" => "./images/category/cat02.jpg"
     ],
     [
         "id" => "05",
-        "title" => "410x410 Plain & Printed Square can with Leaver Lid & Tagger",
-        "description" => "400g Tea Can",
+        "title" => "410x410 Plain & Printed can with Square Lever Lid & Tagger",
+        "description" => "410x410 Plain & Printed can with Square Lever Lid & Tagger",
         "image" => "./images/category/cat05.jpg"
     ],
     [
         "id" => "06",
-        "title" => "410x410 Printed Square can with Slip On Lid",
-        "description" => "400g Tea Can",
+        "title" => "410x410 Plain & Printed Square can with Round Lever Lid & Tagger",
+        "description" => "410x410 Plain & Printed Square can with Round Lever Lid & Tagger",
         "image" => "./images/category/cat06.jpg"
+    ],
+    [
+        "id" => "N07",
+        "title" => "410x410 Printed Square can with Slip On Lid",
+        "description" => "410x410 Printed Square can with Slip On Lid",
+        "image" => "./images/category/ncat07.jpg"
+    ],
+    [
+        "id" => "N08",
+        "title" => "904x904 Square Can with Lever Lid",
+        "description" => "904x904 Square Can with Lever Lid",
+        "image" => "./images/category/ncat08.jpg"
+    ],
+    [
+        "id" => "N09",
+        "title" => "706x706 Square Can with Lever Lid",
+        "description" => "706x706 Square Can with Lever Lid",
+        "image" => "./images/category/ncat09.jpg"
     ],
 ];
 ?>
@@ -62,7 +87,7 @@ $products2 = [
     <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Squada+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="src/css/style.css">
 </head>

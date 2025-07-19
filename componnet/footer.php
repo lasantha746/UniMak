@@ -3,7 +3,9 @@
         <div class="row">
             <img class="footer-logo mb-3 ps-4" src="./images/logo.png" alt="">
             <h2 class="footertitle mb-5 ps-4">
-                The factory with an extent of 20,000 sq.ft, <br> houses state-of-the-art machinery.
+                Three factories, spanning 35,000 square feet, <br>
+                equipped with the latest technology to produce high-quality, <br>
+                innovative metal packaging solutions
             </h2>
         </div>
         <div class="row">
@@ -33,7 +35,12 @@
                             <i class="fas fa-map-marker-alt"></i>
                         </div>
                         <div class="Ftext">
-                            <p>No 2P 10A/10B,<br> Industrial Estate, Ekala,<br> Ja ela, Sri Lanka.</p>
+                            <p>
+                                Unimak Private Limited,<br>
+                                No.2P 10A/10B,<br>
+                                Industrial Estate, Ekala,<br>
+                                Ja-ela, Sri Lanka.
+                            </p>
                         </div>
                     </div>
                     <div class="d-flex align-items-start justify-content-start mb-3">
@@ -41,7 +48,8 @@
                             <i class="fas fa-phone"></i>
                         </div>
                         <div class="Ftext">
-                            <p>(+94) 112 238 282</p>
+                            <p>(+94) 112 238 282<br>
+                                (+94) 714 642 642</p>
                         </div>
                     </div>
                     <div class="d-flex align-items-start justify-content-start mb-3">
@@ -49,13 +57,14 @@
                             <i class="fas fa-envelope"></i>
                         </div>
                         <div class="Ftext">
-                            <p>info@unimak.lk </p>
+                            <p>info@unimak.lk <br>
+                                marketing@unimak.lk </p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="mt-4 footerCop">
+        <div class="mt-2 mb-5 pb-4 footerCop">
             <p class="ps-md-2">
                 &copy; Copyright by <b>Unimak</b>
             </p>

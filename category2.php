@@ -3,64 +3,64 @@ $products = [
 
     [
         "id" => "N01",
-        "title" => "213Ø Round Can with Leaver Lid",
+        "title" => "213Ø Round Can with Lever Lid",
         "description" => "150ml & 200ml",
         "image" => "./images/category/ncat01.jpg"
     ],
     [
         "id" => "N02",
-        "title" => "300Ø Round Can with Leaver Lid",
+        "title" => "300Ø Round Can with Lever Lid",
         "description" => "200ml / 250ml",
         "image" => "./images/category/ncat02.jpg"
     ],
     [
         "id" => "N03",
-        "title" => "404Ø Printed Can with Leaver Lid",
+        "title" => "404Ø Printed Can with Lever Lid",
         "description" => "250ml / 400ml / 500ml",
         "image" => "./images/category/ncat03.jpg"
     ],
 
     [
         "id" => "12",
-        "title" => "404Ø Round Can with Leaver Lid",
+        "title" => "404Ø Round Can with Lever Lid",
         "description" => "01 kg / 01 Ltr",
         "image" => "./images/category/cat12.jpg"
     ],
     [
         "id" => "11",
-        "title" => "509Ø Round Can with Leaver Lid",
+        "title" => "509Ø Round Can with Lever Lid",
         "description" => "800g",
         "image" => "./images/category/cat11.jpg"
     ],
     [
         "id" => "N04",
-        "title" => "603Ø Round Can with Leaver Lid",
+        "title" => "603Ø Round Can with Lever Lid",
         "description" => "2Kg / 4kg / 3 Ltr",
         "image" => "./images/category/ncat04.jpg"
     ],
 
     [
         "id" => "10",
-        "title" => "700Ø Round Can with Leaver Lid",
+        "title" => "700Ø Round Can with Lever Lid",
         "description" => "800g / 1.5Kg",
         "image" => "./images/category/cat10.jpg"
     ],
 
     [
         "id" => "09",
-        "title" => "700Ø Round Can with Leaver Lid",
+        "title" => "700Ø Round Can with Lever Lid",
         "description" => "2Kg",
         "image" => "./images/category/cat09.jpg"
     ],
     [
         "id" => "08",
-        "title" => "700Ø Round Can with Leaver Lid",
+        "title" => "700Ø Round Can with Lever Lid",
         "description" => "4 Ltr",
         "image" => "./images/category/cat08.jpg"
     ],
     [
         "id" => "07",
-        "title" => "700Ø Round Can with Leaver Lid",
+        "title" => "700Ø Round Can with Lever Lid",
         "description" => "5 Ltr",
         "image" => "./images/category/cat07.jpg"
     ],

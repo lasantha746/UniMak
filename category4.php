@@ -8,7 +8,7 @@ $products = [
     ],
     [
         "id" => "18",
-        "title" => "404Ø Round Can with Leaver Lid",
+        "title" => "404Ø Round Can with Lever Lid",
         "description" => "500ml Plain Can / 01 Ltr Plain Can",
         "image" => "./images/category/cat18.jpg"
     ],

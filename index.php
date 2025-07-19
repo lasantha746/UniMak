@@ -237,11 +237,7 @@ $logos = [
                 <div class="px-0 px-sm-3 px-md-5">
                     <div class="section-title d-flex flex-column align-items-center text-center" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
                         <span class="text-black titlehome">
-                            We manufacture and deliver beverage Cans and Ends to some of the world’s most loved beverage
-                            brands. As the leader in beverage packaging in South Asia, Ceylon Beverage Can passionately deliver
-                            more than just a beverage Can & End that make an attractive impact of your beverage brand on
-                            retailer shelves. We produce range of standard aluminium Cans and Can Ends, supported by an exemplary
-                            customer service.
+                            We are a premier provider of high-quality metal packaging solutions in Sri Lanka with over 35 years of industry expertise, we have established a trusted reputation as a reliable partner for the food, beverage, industrial, and export-oriented sectors. Our state-of-the-art manufacturing plant boasts impressive production capacity, allowing us to expertly craft and deliver metal packaging solutions to some of the world’s most cherished brands. Unimak is dedicated to more than just supplying metal packaging—we aim to enhance your brand's visibility and differentiation on retailer shelves. Our range of packaging solutions are engineered to elevate the aesthetic appeal and function of your products, helping them shine in a competitive market, all backed by our outstanding customer service. Choose Unimak to ensure your products not only meet market demands but stand out distinctly
                         </span>
                     </div>
                 </div>
@@ -399,9 +395,22 @@ $logos = [
                                 <div class="animated-line mb-3" data-aos="fade-right" data-aos-delay="300" data-aos-duration="1000">
                                     <div class="line-fill"></div>
                                 </div>
-                                <p class="parcontact" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">We do not compromise on quality. The raw material we use are of the highest grade and the output of our manufacturing plants are testimony to this work ethic. <br><br>
-                                    We adhere to lean manufacturing practices enabling us to transfer its benefits to our clientele by way of competitive prices. <br><br>
-                                    The factory with an extent of 20,000 sq.ft, houses state-of-the-art machinery. Our 100 strong staff are trained by experts in the industry and are dedicated to offering the best quality in all our products with lead times as short as two weeks.</p>
+                                <p class="parcontact" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
+                                    <b>Unwavering Commitment to Quality</b><br>
+                                    At the core of our operations is an uncompromising dedication to quality. We select only the
+                                    highest-grade raw materials, and the superior output from our manufacturing facilities
+                                    exemplifies our commitment to excellence.
+                                    <br><br>
+                                    <b>Lean Manufacturing for Competitive Advantage</b><br>
+                                    By implementing lean manufacturing principles, we optimize efficiency and reduce costs,
+                                    passing these savings onto our clients through highly competitive pricing.
+                                    <br><br>
+                                    <b>Modern Facilities and Skilled Workforce</b><br>
+                                    Our facilities comprise three state-of-the-art factories, with a total area of 35,000 sq. ft.,
+                                    equipped with advanced machinery. Supported by a team of 100+ trained
+                                    professionals—led by industry experts—we are capable of delivering products of the
+                                    highest quality with lead times as short as two weeks.
+                                </p>
 
                                 <button onclick="window.location.href = 'about.php';" class="btn-custom btn-inquire btn-inquire_see" data-aos="fade-up" data-aos-delay="700" data-aos-duration="1000">
                                     <div class="roundicon roundicon_see">
@@ -454,28 +463,28 @@ $logos = [
                 <div class="container ps-3 ps-md-5">
                     <div class="stats py-5 d-flex flex-wrap justify-content-between">
                         <div class="stat-item">
-                            <h3 class="count-up" data-target="30">00+</h3>
+                            <h3 class="count-up" data-target="35">00+</h3>
                             <div class="animated-line2 mb-1" data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000">
                                 <div class="line-fill2"></div>
                             </div>
                             <p data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000">Years</p>
                         </div>
                         <div class="stat-item">
-                            <h3 class="count-up" data-target="100">00+</h3>
+                            <h3 class="count-up" data-target="150">00+</h3>
                             <div class="animated-line2 mb-1" data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000">
                                 <div class="line-fill2"></div>
                             </div>
                             <p data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000">Clients</p>
                         </div>
                         <div class="stat-item">
-                            <h3 class="count-up" data-target="200">00+</h3>
+                            <h3 class="count-up" data-target="60">00+</h3>
                             <div class="animated-line2 mb-1" data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000">
                                 <div class="line-fill2"></div>
                             </div>
                             <p data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000">Collection</p>
                         </div>
                         <div class="stat-item">
-                            <h3 class="count-up" data-target="15">00+</h3>
+                            <h3 class="count-up" data-target="10">00+</h3>
                             <div class="animated-line2 mb-1" data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000">
                                 <div class="line-fill2"></div>
                             </div>
