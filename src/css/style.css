@@ -266,11 +266,16 @@
             position: relative;
         }
 
+        .marginremake {
+            margin: 30px 0px 30px;
+        }
+
         .section-title2 {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
             max-width: 1200px;
             margin: 0 auto;
+
         }
 
         .section-title h2 {
@@ -544,6 +549,7 @@
             padding-bottom: 4px;
             padding-right: 15px;
         }
+
         .span_cus {
             padding-left: 10px !important;
             padding-right: 10px !important;
@@ -958,7 +964,7 @@
             width: 100%;
             height: auto;
             /* max-width: 200px; */
-            border-radius: 24px;
+            border-radius: 15px;
             /* z-index: -1; */
         }
 
@@ -1669,4 +1675,45 @@
             position: relative;
             opacity: 1;
             z-index: 1;
+        }
+
+        .why-choose-us-section {
+            background: linear-gradient(to right, #dcebff 20%, #b5dbff 80%);
+            padding: 10px 0;
+        }
+
+        .feature-box {
+            background-color: #d4e8fc;
+            border: 2px solid #f3fbff;
+            border-radius: 15px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .feature-box hr{
+            height: 2px;
+            border: #f3fbff;
+            background-color: #f3fbff;
+        }
+
+        .feature-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+        }
+
+        .feature-icon {
+            width: 100%;
+            max-width: 200px;
+            height: auto;
+            object-fit: contain;
+        }
+
+        .feature-title {
+            font-weight: 700;
+            font-size: 1.1rem;
+            margin-top: 10px;
+            color: #111;
+        }
+
+        .feature-text {
+            font-size: 0.95rem;
+            color: #333;
         }

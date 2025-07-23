@@ -386,51 +386,57 @@ $logos = [
                 </div>
             </section>
 
-            <section class="why-choose-us pb-4" id="why">
-                <div class="container ps-3 ps-md-5">
-                    <div class="row">
-                        <div class="col-12 col-md-6">
-                            <div class="section-title">
-                                <h2 class="mb-3 titleFont" data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000">Why Choose Us</h2>
-                                <div class="animated-line mb-3" data-aos="fade-right" data-aos-delay="300" data-aos-duration="1000">
-                                    <div class="line-fill"></div>
-                                </div>
-                                <p class="parcontact" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
-                                    <b>Unwavering Commitment to Quality</b><br>
-                                    At the core of our operations is an uncompromising dedication to quality. We select only the
-                                    highest-grade raw materials, and the superior output from our manufacturing facilities
-                                    exemplifies our commitment to excellence.
-                                    <br><br>
-                                    <b>Lean Manufacturing for Competitive Advantage</b><br>
-                                    By implementing lean manufacturing principles, we optimize efficiency and reduce costs,
-                                    passing these savings onto our clients through highly competitive pricing.
-                                    <br><br>
-                                    <b>Modern Facilities and Skilled Workforce</b><br>
-                                    Our facilities comprise three state-of-the-art factories, with a total area of 35,000 sq. ft.,
-                                    equipped with advanced machinery. Supported by a team of 100+ trained
-                                    professionals—led by industry experts—we are capable of delivering products of the
-                                    highest quality with lead times as short as two weeks.
-                                </p>
+            <section class="why-choose-us-section" id="why">
+                <div class="container py-5 px-3 px-md-5">
+                    <h2 class="mb-3 titleFont" data-aos="fade-right">Why Choose Us</h2>
+                    <div class="animated-line mb-4" data-aos="fade-right">
+                        <div class="line-fill"></div>
+                    </div>
 
-                                <button onclick="window.location.href = 'about.php';" class="btn-custom btn-inquire btn-inquire_see" data-aos="fade-up" data-aos-delay="700" data-aos-duration="1000">
-                                    <div class="roundicon roundicon_see">
-                                        <i class="fa-solid fa-arrow-up-long"></i>
-                                    </div>
-                                    <span>See More</span>
-                                </button>
-
+                    <div class="row g-4">
+                        <!-- Feature Card 1 -->
+                        <div class="col-12 col-md-4">
+                            <div class="feature-box text-center h-100 p-2" data-aos="fade-up" data-aos-delay="100">
+                                <img src="images/whyicon03.png" alt="Quality Icon" class="feature-icon mb-1">
+                                <hr>
+                                <h5 class="feature-title">Unwavering Commitment to Quality</h5>
+                                <p class="feature-text">At the core of our operations is an uncompromising dedication to quality.</p>
                             </div>
                         </div>
-                        <div class="col-12 col-md-6 pt-3 pt-md-5 pb-md-5">
-                            <img src="./images/whyus.jpg" alt="Bottle Cap" class="img-fluid rotate-img mt-md-5" data-aos="fade-left" data-aos-delay="500" data-aos-duration="1000" />
-                            <div class="mt-3 certifications mt-4 d-flex gap-3 flex-wrap">
-                                <img src="./images/fssc.png" alt="FSSC 22000" class="cert-img" data-aos="fade-up" data-aos-delay="800" data-aos-duration="1000" />
-                                <img src="./images/iso.png" alt="ISO Certified" class="cert-img" data-aos="fade-up" data-aos-delay="900" data-aos-duration="1000" />
+
+                        <!-- Feature Card 2 -->
+                        <div class="col-12 col-md-4">
+                            <div class="feature-box text-center h-100 p-2" data-aos="fade-up" data-aos-delay="200">
+                                <img src="images/whyicon01.png" alt="Manufacturing Icon" class="feature-icon mb-1">
+                                <hr>
+                                <h5 class="feature-title">Lean Manufacturing for Competitive Advantage</h5>
+                                <p class="feature-text">By implementing lean manufacturing principles, we optimize efficiency and reduce costs.</p>
+                            </div>
+                        </div>
+
+                        <!-- Feature Card 3 -->
+                        <div class="col-12 col-md-4">
+                            <div class="feature-box text-center h-100 p-2" data-aos="fade-up" data-aos-delay="300">
+                                <img src="images/whyicon02.png" alt="Factory Icon" class="feature-icon mb-1">
+                                <hr>
+                                <h5 class="feature-title">Modern Facilities and Skilled Workforce</h5>
+                                <p class="feature-text">Our facilities comprise three state-of-the-art factories, with a total area of 35,000 sq. ft.</p>
                             </div>
                         </div>
                     </div>
+
+                    <!-- Button -->
+                    <div class="mt-4" data-aos="fade-up" data-aos-delay="400">
+                        <button onclick="window.location.href = 'why.php';" class="btn-custom btn-inquire btn-inquire_see">
+                            <div class="roundicon roundicon_see">
+                                <i class="fa-solid fa-arrow-up-long"></i>
+                            </div>
+                            <span>See More</span>
+                        </button>
+                    </div>
                 </div>
             </section>
+
 
             <section class="pb-4">
                 <div class="container ps-3 ps-md-5">

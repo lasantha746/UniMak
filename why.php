@@ -1,63 +1,3 @@
-<?php
-$logos = [
-    [
-        "id" => "01",
-        "name" => "Asianpaints",
-        "image" => "./images/Logo/cl-14.jpg"
-    ],
-    [
-        "id" => "02",
-        "name" => "Elephant House",
-        "image" => "./images/Logo/cl-15.jpg"
-    ],
-    [
-        "id" => "03",
-        "name" => "Nippon Paint",
-        "image" => "./images/Logo/cl-16.jpg"
-    ],
-    [
-        "id" => "04",
-        "name" => "Lankem",
-        "image" => "./images/Logo/cl-17.jpg"
-    ],
-    [
-        "id" => "05",
-        "name" => "Jones",
-        "image" => "./images/Logo/cl-18.jpg"
-    ],
-    [
-        "id" => "06",
-        "name" => "CHB",
-        "image" => "./images/Logo/cl-19.jpg"
-    ],
-    [
-        "id" => "07",
-        "name" => "Lipton",
-        "image" => "./images/Logo/cl-20.jpg"
-    ],
-    [
-        "id" => "08",
-        "name" => "CocaCola",
-        "image" => "./images/Logo/cl-21.jpg"
-    ],
-    [
-        "id" => "09",
-        "name" => "Milco",
-        "image" => "./images/Logo/cl-22.jpg"
-    ],
-    [
-        "id" => "10",
-        "name" => "Van Rees",
-        "image" => "./images/Logo/cl-23.jpg"
-    ],
-    [
-        "id" => "11",
-        "name" => "Finlays",
-        "image" => "./images/Logo/cl-24.jpg"
-    ],
-];
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -97,9 +37,13 @@ $logos = [
 
             <section class="why-choose-us pb-4" id="why" style="margin-top: 100px;">
                 <div class="container ps-3 ps-md-5">
-                    <div class="row">
-                        <div class="col-12 col-md-6">
-                            <div class="section-title">
+                <div class="row">
+                    <img style="border-radius: 25px; width: 100%; height: auto;" src="./images/whyusimg.jpg" alt="why" class="img-fluid rotate-img" data-aos="fade-left" data-aos-delay="500" data-aos-duration="1000"/>
+                </div>   
+                
+                <div class="row mt-2">
+                        <div class="col-12 col-md-6" >
+                            <div class="section-title marginremake">
                                 <h2 class="mb-3 titleFont" data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000">Why Choose Us</h2>
                                 <div class="animated-line mb-3" data-aos="fade-right" data-aos-delay="300" data-aos-duration="1000">
                                     <div class="line-fill"></div>
@@ -121,83 +65,17 @@ $logos = [
                                     highest quality with lead times as short as two weeks.
                                 </p>
 
-                                <button onclick="window.location.href = 'about.php';" class="btn-custom btn-inquire btn-inquire_see" data-aos="fade-up" data-aos-delay="700" data-aos-duration="1000">
-                                    <div class="roundicon roundicon_see">
-                                        <i class="fa-solid fa-arrow-up-long"></i>
-                                    </div>
-                                    <span>See More</span>
-                                </button>
+                       
 
                             </div>
                         </div>
-                        <div class="col-12 col-md-6 pt-3 pt-md-5 pb-md-5">
-                            <img src="./images/whyus.jpg" alt="Bottle Cap" class="img-fluid rotate-img mt-md-5" data-aos="fade-left" data-aos-delay="500" data-aos-duration="1000" />
+                        <div class="col-12 col-md-6 pt-3 pb-md-5">
+                            <img src="./images/why01.jpg" alt="Bottle Cap" class="img-fluid rotate-img" data-aos="fade-left" data-aos-delay="500" data-aos-duration="1000" />
+                            <img src="./images/why02.jpg" alt="Bottle Cap" class="img-fluid rotate-img mt-4" data-aos="fade-left" data-aos-delay="500" data-aos-duration="1000" />
                             <div class="mt-3 certifications mt-4 d-flex gap-3 flex-wrap">
                                 <img src="./images/fssc.png" alt="FSSC 22000" class="cert-img" data-aos="fade-up" data-aos-delay="800" data-aos-duration="1000" />
                                 <img src="./images/iso.png" alt="ISO Certified" class="cert-img" data-aos="fade-up" data-aos-delay="900" data-aos-duration="1000" />
                             </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="pb-4">
-                <div class="container ps-3 ps-md-5">
-                    <div class="row">
-                        <div class="col-12 col-md-8 mb-lg-0">
-                            <div class="section-title" style="margin-bottom: 5px;">
-                                <h2 class="mb-3 titleFont" data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000">Our Clients</h2>
-                                <div class="animated-line" data-aos="fade-right" data-aos-delay="300" data-aos-duration="1000">
-                                    <div class="line-fill"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12">
-                            <div class="glide">
-                                <div class="glide__track" data-glide-el="track">
-                                    <ul class="glide__slides">
-                                        <?php foreach ($logos as $logo): ?>
-                                            <li class="glide__slide"><img src="<?php echo $logo['image']; ?>" alt="<?php echo $logo['name']; ?>"></li>
-                                        <?php endforeach; ?>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </section>
-
-            <section class="" style="background-color: #e1e4ff;">
-                <div class="container ps-3 ps-md-5">
-                    <div class="stats py-5 d-flex flex-wrap justify-content-between">
-                        <div class="stat-item">
-                            <h3 class="count-up" data-target="35">00+</h3>
-                            <div class="animated-line2 mb-1" data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000">
-                                <div class="line-fill2"></div>
-                            </div>
-                            <p data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000">Years</p>
-                        </div>
-                        <div class="stat-item">
-                            <h3 class="count-up" data-target="150">00+</h3>
-                            <div class="animated-line2 mb-1" data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000">
-                                <div class="line-fill2"></div>
-                            </div>
-                            <p data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000">Clients</p>
-                        </div>
-                        <div class="stat-item">
-                            <h3 class="count-up" data-target="60">00+</h3>
-                            <div class="animated-line2 mb-1" data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000">
-                                <div class="line-fill2"></div>
-                            </div>
-                            <p data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000">Collection</p>
-                        </div>
-                        <div class="stat-item">
-                            <h3 class="count-up" data-target="10">00+</h3>
-                            <div class="animated-line2 mb-1" data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000">
-                                <div class="line-fill2"></div>
-                            </div>
-                            <p data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000">Industries</p>
                         </div>
                     </div>
                 </div>
@@ -218,28 +96,6 @@ $logos = [
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollSmoother.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
-    <script>
-        new Glide('.glide', {
-            type: 'carousel',
-            perView: 5,
-            focusAt: 'center',
-            autoplay: 2000,
-            hoverpause: true,
-            gap: 5,
-            animationDuration: 1000,
-            breakpoints: {
-                1024: {
-                    perView: 5
-                },
-                768: {
-                    perView: 4
-                },
-                480: {
-                    perView: 3
-                }
-            }
-        }).mount();
-    </script>
     <script>
         gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 
