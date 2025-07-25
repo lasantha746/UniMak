@@ -105,7 +105,7 @@
                                         </p>
 
                                         <div class="row d-flex justify-content-center justify-content-md-end">
-                                            <div class="vision-card me-0 me-md-3" data-aos="fade-right" data-aos-delay="500" data-aos-duration="1000">
+                                            <div class="vision-card me-0 me-md-3 fontNunito" data-aos="fade-right" data-aos-delay="500" data-aos-duration="1000">
                                                 <h5>Mission,</h5>
                                                 <p>
                                                     To deliver superior-quality, <br> 
@@ -122,7 +122,7 @@
                                         </div>
                                     </div>
                                     <div class="col-12 col-md-6 d-flex justify-content-center justify-content-md-start">
-                                        <div class="vision-card mt-3" data-aos="fade-left" data-aos-delay="500" data-aos-duration="1000">
+                                        <div class="vision-card fontNunito mt-3" data-aos="fade-left" data-aos-delay="500" data-aos-duration="1000">
                                             <h5>Vision,</h5>
                                             <p>
                                                 To be the most trusted <br>

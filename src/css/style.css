@@ -9,6 +9,9 @@
             background-color: #ffffff;
             overflow-x: hidden !important;
         }
+        .fontNunito {
+            font-family: 'Nunito Sans', sans-serif !important;
+        }
 
         .titleFont {
             font-family: 'Squada One', cursive !important;
@@ -968,6 +971,14 @@
             /* z-index: -1; */
         }
 
+        .rotate-imgwhy {
+            width: 100%;
+            height: auto;
+            /* max-width: 200px; */
+            border-radius: 20px;
+            /* z-index: -1; */
+        }
+
         .rotate-img2 {
             width: 100%;
             height: auto;
@@ -1045,10 +1056,15 @@
             .btn-inquire_see {
                 height: 34px;
             }
+
+
         }
 
         /* Responsive Design */
         @media (max-width: 768px) {
+            .rotate-imgwhy {
+                border-radius: 15px;
+            }
 
             .product-card_home {
                 max-width: 100%;
@@ -1688,7 +1704,8 @@
             border-radius: 15px;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
-        .feature-box hr{
+
+        .feature-box hr {
             height: 2px;
             border: #f3fbff;
             background-color: #f3fbff;

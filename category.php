@@ -57,18 +57,19 @@ $products2 = [
         "description" => "410x410 Printed Square can with Slip On Lid",
         "image" => "./images/category/ncat07.jpg"
     ],
+        [
+        "id" => "N09",
+        "title" => "706x706 Square Can with Lever Lid",
+        "description" => "706x706 Square Can with Lever Lid",
+        "image" => "./images/category/ncat09.jpg"
+    ],
     [
         "id" => "N08",
         "title" => "904x904 Square Can with Lever Lid",
         "description" => "904x904 Square Can with Lever Lid",
         "image" => "./images/category/ncat08.jpg"
     ],
-    [
-        "id" => "N09",
-        "title" => "706x706 Square Can with Lever Lid",
-        "description" => "706x706 Square Can with Lever Lid",
-        "image" => "./images/category/ncat09.jpg"
-    ],
+
 ];
 ?>
 

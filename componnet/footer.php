@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row">
             <img class="footer-logo mb-3 ps-4" src="./images/logo.png" alt="">
-            <h2 class="footertitle mb-5 ps-4">
+            <h2 class="footertitle fontNunito mb-5 ps-4">
                 Three factories, spanning 35,000 square feet, <br>
                 equipped with the latest technology to produce high-quality, <br>
                 innovative metal packaging solutions

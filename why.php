@@ -38,7 +38,9 @@
             <section class="why-choose-us pb-4" id="why" style="margin-top: 100px;">
                 <div class="container ps-3 ps-md-5">
                 <div class="row">
-                    <img style="border-radius: 25px; width: 100%; height: auto;" src="./images/whyusimg.jpg" alt="why" class="img-fluid rotate-img" data-aos="fade-left" data-aos-delay="500" data-aos-duration="1000"/>
+                    <div class="col-12">
+                    <img src="./images/whyusimg.jpg" alt="why" class="img-fluid rotate-imgwhy" data-aos="fade-left" data-aos-delay="500" data-aos-duration="1000"/>
+                    </div>
                 </div>   
                 
                 <div class="row mt-2">
