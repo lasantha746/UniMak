@@ -111,10 +111,8 @@
                                                     To deliver superior-quality, <br> 
                                                     cost-effective, and  <br>
                                                     eco-conscious packaging  <br>
-                                                    solutions through
-                                                </p>
-                                                <p class="vision-subtext">
-                                                    continuous innovation, customer <br>
+                                                    solutions through <br>
+                                                      continuous innovation, customer <br>
                                                     focus, and operational excellence.
                                                 </p>
                                             </div>
