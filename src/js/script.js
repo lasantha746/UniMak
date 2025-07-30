@@ -128,7 +128,6 @@ function sendContactMail() {
 
   var productTitle = document.getElementById("product_title");
   var productImg = document.getElementById("product_img");
-  const fullImgUrl = productImg.value.replace(/^\.?\/?/, "https://unimak.lk/");
 
   var f = new FormData();
   f.append("namec", namec.value);
@@ -137,6 +136,7 @@ function sendContactMail() {
   f.append("messagec", messagec.value);
 
   if (productTitle && productImg) {
+    const fullImgUrl = productImg.value.replace(/^\.?\/?/, "https://unimak.lk/");
     f.append("product_title", productTitle.value);
     f.append("product_img", fullImgUrl);
   }
@@ -149,12 +149,12 @@ function sendContactMail() {
 
       if (response == 1) {
         hidenloder();
-        alert("Send Successfull");
+        Swal.fire('Success', 'Your message has been sent!', 'success');
         window.location.href = "contact.php";
 
       } else {
         hidenloder();
-        alert(response);
+        Swal.fire('Oops!', response, 'warning');
       }
 
     }
