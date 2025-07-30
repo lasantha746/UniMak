@@ -37,10 +37,10 @@ if (empty($namec)) {
     echo ("Please Enter message");
 } else {
 
-    $sendMail = "2mytestemail@gmail.com";
-    $passcode = "wgvhfbxhgmcgjpnl";
+    $sendMail = "info@unimak.lk";
+    $passcode = "UniMak@2025";
     $mailTitle = "Contact Information";
-    $receiver = "lasanthap022@gmail.com";
+    $receiver = "info@unimak.lk";
 
     $msg2 = "
     <!DOCTYPE html>
@@ -145,14 +145,14 @@ if (empty($namec)) {
     // email code
     $mail = new PHPMailer;
     $mail->IsSMTP();
-    $mail->Host = 'smtp.gmail.com';
+    $mail->Host = 'unimak.lk';
     $mail->SMTPAuth = true;
     $mail->Username = $sendMail;
     $mail->Password = $passcode;
     $mail->SMTPSecure = 'ssl';
     $mail->Port = 465;
-    $mail->setFrom($sendMail, $mailTitle);
-    $mail->addReplyTo($sendMail, $mailTitle);
+    $mail->setFrom($sendMail, 'Unimak Website');
+    $mail->addReplyTo($emailc, $namec);
     $mail->addAddress($receiver);
     $mail->isHTML(true);
     $mail->Subject = 'Contact Information';
@@ -161,6 +161,7 @@ if (empty($namec)) {
 
     if (!$mail->send()) {
         echo 'Email sending failed';
+        echo 'Mailer Error: ' . $mail->ErrorInfo;
     } else {
         echo '1';
     }
