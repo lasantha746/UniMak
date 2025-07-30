@@ -18,12 +18,18 @@ $img = isset($_GET['img']) ? htmlspecialchars($_GET['img']) : null;
     <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Squada+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="src/css/style.css">
 </head>
 
 <body>
+
+    <div class="mailLoder" id="mailLoder">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
 
     <!-- Navigation -->
     <?php include('componnet/navbar.php'); ?>
@@ -68,17 +74,21 @@ $img = isset($_GET['img']) ? htmlspecialchars($_GET['img']) : null;
                             <div class="ms-0 ms-md-2">
                                 <div class="mb-3">
                                     <label for="name" class="form-label fw-bold">Full Name</label>
-                                    <input type="text" class="form-control" id="name" placeholder="Your Name" />
+                                    <input type="text" class="form-control" id="name" placeholder="Your Name" required />
                                 </div>
                                 <div class="mb-3">
                                     <label for="email" class="form-label fw-bold">Email Address</label>
-                                    <input type="email" class="form-control" id="email" placeholder="name@example.com" />
+                                    <input type="email" class="form-control" id="email" placeholder="name@example.com" required />
                                 </div>
                                 <div class="mb-3">
                                     <label for="mobile" class="form-label fw-bold">Mobile</label>
                                     <input type="text" class="form-control" id="mobile" placeholder="07########" required />
                                 </div>
                                 <?php if ($title && $img): ?>
+
+                                    <input type="hidden" id="product_title" value="<?php echo $title; ?>" />
+                                    <input type="hidden" id="product_img" value="<?php echo $img; ?>" />
+
                                     <div class="container mb-3" data-aos="zoom-in" data-aos-delay="200">
                                         <div class="card shadow-sm border-0">
                                             <div class="row g-0">
@@ -97,10 +107,10 @@ $img = isset($_GET['img']) ? htmlspecialchars($_GET['img']) : null;
                                 <?php endif; ?>
                                 <div class="mb-3">
                                     <label for="message" class="form-label fw-bold">Message</label>
-                                    <textarea class="form-control" id="message" rows="5" placeholder="Your message..."></textarea>
+                                    <textarea class="form-control" id="message" rows="5" placeholder="Your message..." required></textarea>
                                 </div>
                                 <!-- <button type="submit" class="btn btn-dark px-4">Send Message</button> -->
-                                <button onclick="window.location.href = 'contact.php?title=<?php echo urlencode($product['title']); ?>&img=<?php echo urlencode($product['image']); ?>';" class="btn-custom btn-inquire">
+                                <button onclick="sendContactMail();" class="btn-custom btn-inquire">
                                     <div class="roundicon">
                                         <i class="fa-solid fa-arrow-up-long"></i>
                                     </div>

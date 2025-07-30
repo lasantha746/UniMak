@@ -9,6 +9,7 @@
             background-color: #ffffff;
             overflow-x: hidden !important;
         }
+
         .fontNunito {
             font-family: 'Nunito Sans', sans-serif !important;
         }
@@ -1733,4 +1734,18 @@
         .feature-text {
             font-size: 0.95rem;
             color: #333;
+        }
+
+        .mailLoder {
+            position: fixed;
+            width: 100%;
+            height: 100vh;
+            top: 0 !important;
+            left: 0 !important;
+            z-index: 999999;
+            background-color: #00000056;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            visibility: hidden;
         }

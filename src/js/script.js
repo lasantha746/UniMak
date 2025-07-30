@@ -116,3 +116,59 @@ document.addEventListener("DOMContentLoaded", function () {
 //AOS animation
 
 
+
+//SendContact
+function sendContactMail() {
+  showloder();
+
+  var namec = document.getElementById("name");
+  var emailc = document.getElementById("email");
+  var mobilec = document.getElementById("mobile");
+  var messagec = document.getElementById("message");
+
+  var productTitle = document.getElementById("product_title");
+  var productImg = document.getElementById("product_img");
+  const fullImgUrl = productImg.value.replace(/^\.?\/?/, "https://unimak.lk/");
+
+  var f = new FormData();
+  f.append("namec", namec.value);
+  f.append("emailc", emailc.value);
+  f.append("mobilec", mobilec.value);
+  f.append("messagec", messagec.value);
+
+  if (productTitle && productImg) {
+    f.append("product_title", productTitle.value);
+    f.append("product_img", fullImgUrl);
+  }
+
+  var request = new XMLHttpRequest();
+  request.onreadystatechange = function () {
+    if ((request.readyState == 4) & (request.status == 200)) {
+      var response = request.responseText;
+      // alert(response);
+
+      if (response == 1) {
+        hidenloder();
+        alert("Send Successfull");
+        window.location.href = "contact.php";
+
+      } else {
+        hidenloder();
+        alert(response);
+      }
+
+    }
+  };
+
+  request.open("POST", "./process/sendMailContact.php", true);
+  request.send(f);
+}
+
+
+function showloder() {
+  document.getElementById('mailLoder').style.visibility = 'visible';
+}
+
+function hidenloder() {
+  document.getElementById('mailLoder').style.visibility = 'hidden';
+}
