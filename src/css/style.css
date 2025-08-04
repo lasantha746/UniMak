@@ -1255,7 +1255,8 @@
         }
 
         .vision-card {
-            background: linear-gradient(to right, #0000ff, #000033);
+            /* background: linear-gradient(to right, #0000ff, #000033); */
+            background-color: #4B59BC;
             /* blue gradient */
             color: white;
             padding: 30px;
@@ -1263,6 +1264,9 @@
             width: fit-content;
             height: fit-content;
             font-family: Arial, sans-serif;
+            width: 100%;
+            max-width: 300px;
+            /* margin: 0 auto; */
         }
 
         .vision-card h5 {
