@@ -105,7 +105,7 @@
                                         </p>
 
                                         <div class="row d-flex justify-content-center justify-content-md-end">
-                                            <div class="d-md-block d-none vision-card me-0 me-md-3 fontNunito" data-aos="fade-right" data-aos-delay="500" data-aos-duration="1000">
+                                            <!-- <div class="d-md-block d-none vision-card me-0 me-md-3 fontNunito" data-aos="fade-right" data-aos-delay="500" data-aos-duration="1000">
                                                 <h5>Mission,</h5>
                                                 <p>
                                                     To deliver superior-quality, <br>
@@ -116,8 +116,8 @@
                                                     customer focus and <br>
                                                     operational excellence.<br>
                                                 </p>
-                                            </div>
-                                            <div class="d-md-none d-block vision-card fontNunito mt-3" data-aos="fade-left" data-aos-delay="200" data-aos-duration="1000">
+                                            </div> -->
+                                            <div class="vision-card fontNunito mt-3" data-aos="fade-left" data-aos-delay="200" data-aos-duration="1000">
                                                 <h5>Vision,</h5>
                                                 <p>
                                                     To be the most trusted <br>
@@ -133,7 +133,7 @@
                                         </div>
                                     </div>
                                     <div class="col-12 col-md-6 d-flex justify-content-center justify-content-md-start">
-                                        <div class="d-md-block d-none vision-card fontNunito mt-3" data-aos="fade-left" data-aos-delay="200" data-aos-duration="1000">
+                                        <!-- <div class="d-md-block d-none vision-card fontNunito mt-3" data-aos="fade-left" data-aos-delay="200" data-aos-duration="1000">
                                             <h5>Vision,</h5>
                                             <p>
                                                 To be the most trusted <br>
@@ -145,8 +145,8 @@
                                                 recognized regionally <br>
                                                 and globally.
                                             </p>
-                                        </div>
-                                        <div class="mt-3 d-md-none d-block vision-card me-0 me-md-3 fontNunito" data-aos="fade-right" data-aos-delay="500" data-aos-duration="1000">
+                                        </div> -->
+                                        <div class="mt-3 vision-card me-0 me-md-3 fontNunito" data-aos="fade-right" data-aos-delay="500" data-aos-duration="1000">
                                             <h5>Mission,</h5>
                                             <p>
                                                 To deliver superior-quality, <br>
